@@ -344,10 +344,10 @@ grid-template-columns: 1fr 1fr;
 margin-top: 123px;
 }
 .banner-video-bg {
-background: #fff;
-padding: 20px;
-border-top-right-radius: 44px;
-position: relative;
+    background: #fff;
+    padding: 20px 20px 0 0;
+    border-top-right-radius: 44px;
+    position: relative;
 }
 
 .banner-video-bg .heading {
@@ -594,10 +594,70 @@ position: relative;
 .brand-text {
 position: absolute;
 top: 0;
-left: 0;
-width: 100%;
+left: 36px;
+width: calc(100% - 36px);
 }
 
 .brand-text > img {
 width: 170px;
+}
+
+.brand .grid {
+grid-template-columns: 634px 1fr;
+}
+
+.brand-text p {
+max-width: 551px;
+}
+
+.brand-text h3 {
+color: var(--white);
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%;
+text-transform: uppercase;
+margin: 32px 0 20px;
+}
+
+.view-flex {
+margin-top: 96px;
+display: flex;
+justify-content: space-between;
+max-width: 553px;
+position: relative;
+}
+
+.view-flex:before {
+content: "";
+position: absolute;
+top: -25px;
+left: 0;
+width: 100%;
+height: 2px;
+opacity: 0.2;
+background: var(--white);
+}
+
+.view-flex span {
+color: var(--white);
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%;
+opacity: 0.5;
+}
+
+.view-flex a {
+color: var(--white);
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 28px */
+text-transform: uppercase;
+}
+
+.brand {
+margin-left: 52px;
+margin-top: 100px;
 }
