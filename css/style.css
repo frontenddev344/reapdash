@@ -1096,7 +1096,7 @@ background: url(../img/product-bnr.png);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
-padding: 61px 15px;
+padding: 61px 15px 232px;
 }
 .product-main .web-heading h3 {
 color: #000000;
@@ -1118,4 +1118,63 @@ padding-bottom:0px;
 
 .product-main  .owl-item.active.center img {
 min-height: 610px;
+}
+.product-slider .owl-nav button:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 36px;
+	height: 36px;
+	z-index: 3;
+}
+
+.product-slider .owl-nav button.owl-prev:before {
+	background: url("../img/product-arrow.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.product-slider .owl-nav button.owl-next:before {
+	background: url("../img/product-arrow-2.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+background-position: center;
+}
+
+.product-slider .owl-nav {
+position: absolute;
+bottom: -35px;
+left: 48%;
+transform: translateX(-50%);
+}
+
+.product-slider {
+position: relative;
+}
+
+.product-slider .owl-nav .owl-prev {
+position: absolute;
+left: -129px;
+}
+
+.product-slider .owl-nav .owl-next {
+position: absolute;
+right: -175px;
+}
+
+.reap-heading {
+text-align: center;
+margin-top: 28px;
+}
+
+.reap-heading p {
+color: var(--White, #FFF);
+font-family: Montserrat;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; 
+letter-spacing: -0.84px;
 }
