@@ -251,59 +251,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <script>
-    $(".mobile_btn").click(function(){
-  $(".links_bar").toggleClass("sidebar");
-});
-
-
-
-
-
- //droupdown
-
-    $(document).ready(function(){
-  $(".links_bar li").click(function(){
-    $(".droupdown").toggle();
-  });
-});
-  </script>
-
-
-
-  <script>
-    $('.banner-slide').owlCarousel({
-    loop: true,
-    margin: 10,
-    slideTransition: 'linear', // Smooth linear transition
-    items: 1,
-    responsiveClass: true,
-    autoplay: true,
-    autoplayTimeout: 2000, // Time between slides
-    autoplaySpeed: 16000, // Smooth autoplay speed
-    nav: false,
-    responsive: {
-        0: {
-            items: 1,
-        },
-        600: {
-            items: 1,
-        },
-        1000: {
-            items: 1,
-        }
-    }
-});
-
-$('.banner-slide').on('changed.owl.carousel', function(event) {
-    // Pause autoplay for 20 seconds (20,000 ms) after each slide
-    $('.banner-slide').trigger('stop.owl.autoplay'); // Stop autoplay
-    setTimeout(function() {
-        $('.banner-slide').trigger('play.owl.autoplay', [2000]); // Resume autoplay after pause
-    }, 20000); // 20-second pause
-});
-
-  </script>
   </body>
 </html>

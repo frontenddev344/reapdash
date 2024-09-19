@@ -341,7 +341,7 @@ position: relative;
 .banner-video-flex {
 display: grid;
 grid-template-columns: 1fr 1fr;
-margin-top: 123px;
+margin-top: 78px;
 }
 .banner-video-bg {
     background: #fff;
