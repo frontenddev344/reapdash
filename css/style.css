@@ -567,7 +567,7 @@ background: #ffffff;
 transform: translateY(-50%);
 }
 .footer-bottom{
-    margin-top: 60px;
+margin-top: 60px;
 }
 
 .copyright-adress p {
@@ -580,5 +580,24 @@ opacity: 0.5;
 text-align: right;
 }
 .copyright ul li:last-child a:before {
-    display: none;
+display: none;
+}
+
+.footer-bottom .grid {
+gap: 15px;
+}
+
+.brand-identity {
+position: relative;
+}
+
+.brand-text {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+}
+
+.brand-text > img {
+width: 170px;
 }
