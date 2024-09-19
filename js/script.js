@@ -103,3 +103,26 @@ $('.web-page-slider').owlCarousel({
 
 
 
+$(document).ready(function() {
+    var $carousel = $('.owl-carousel');
+    var totalItems = $carousel.find('.item').length;
+    var $progressBarFill = $('.progress-bar-fill');
+
+    $carousel.owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        dots: false,
+        onInitialized: updateProgressBar, // Initial Progress Bar state
+        onTranslated: updateProgressBar  // Update Progress Bar when slide changes
+    });
+
+    function updateProgressBar(event) {
+        var index = event.item.index - event.relatedTarget._clones.length / 2; // Adjust for clones
+        if (index === totalItems) {
+            index = 0;
+        }
+        var progressPercent = ((index + 1) / totalItems) * 100; // Percent of current slide
+        $progressBarFill.css('width', progressPercent + '%');
+    }
+});
