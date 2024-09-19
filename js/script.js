@@ -77,7 +77,8 @@ $('.brand-slider').owlCarousel({
 
 $('.web-page-slider').owlCarousel({
     loop:true,
-    margin:10,
+    margin:0,
+    items: 4,
     responsiveClass:true,
     responsive:{
         0:{
@@ -89,7 +90,7 @@ $('.web-page-slider').owlCarousel({
             nav:false
         },
         1000:{
-            items:5,
+            items:4,
             nav:true,
             loop:false
         }
