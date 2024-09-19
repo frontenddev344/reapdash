@@ -50,10 +50,12 @@ $('.banner-slide').on('changed.owl.carousel', function(event) {
     }, 20000); // 20-second pause
 });
 
+// brand-slider
 
 $('.brand-slider').owlCarousel({
     loop: true,
     margin: 12,
+    autoplay: true,
     items: 2.5, // Show 2.5 slides at a time
     responsiveClass: true,
     dots: false,
@@ -70,3 +72,26 @@ $('.brand-slider').owlCarousel({
         }
     }
 });
+
+
+
+$('.web-page-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})

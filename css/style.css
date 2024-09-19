@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
 box-sizing: border-box;
 padding: 0;
@@ -78,7 +78,9 @@ padding: 0 15px;
 .grid {
 display: grid;
 }
-
+.grid-cols-1{
+grid-template-columns: 1fr ;
+}
 .grid-cols-2 {
 grid-template-columns: 1fr 1fr;
 }
@@ -850,4 +852,118 @@ max-width: 96%;
 .web-page {
 background: #264975;
 padding: 69px 10px 174px;
+}
+.web-gif img {
+width: 142px;
+}
+
+.web-heading h3 {
+color: #FFF;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 48px */
+text-transform: uppercase;
+}
+
+.web-heading {
+display: flex;
+justify-content: space-between;
+gap: 10px;
+align-items: center;
+margin-top: -25px;
+}
+
+
+
+.view-all {
+padding: 24px 32px;
+border-radius: 250px;
+border: 2px solid #FFF;
+color: #FFF;
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 22.4px */
+letter-spacing: 0.48px;
+text-transform: uppercase;
+}
+.web-page .container {
+max-width: 1520px;
+}
+.web-page-slider-text p {
+font-weight: 700;
+font-family: "Montserrat", sans-serif;
+margin-top: 24px;
+}
+
+.web-page-slider-text p {
+font-weight: 700;
+font-family: "Montserrat", sans-serif;
+margin-top: 24px;
+}
+
+.date-dwld {
+display: flex;
+gap: 24px;
+}
+
+
+
+.date-dwld span {
+color: var(--white);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 25.6px */
+letter-spacing: -0.48px;
+position: relative;
+}
+
+.date-dwld a {
+color: var(--white);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 25.6px */
+letter-spacing: -0.48px;
+display: flex;
+align-items: center;
+}
+
+.date-dwld a img {
+width: 18px!important;
+object-fit: cover;
+margin-right: 6px;
+height: auto;
+}
+
+.date-dwld span:nth-child(2):before {
+content: "";
+position: absolute;
+top: 50%;
+left: -14px;
+width: 5px;
+height: 5px;
+border-radius: 50px;
+background: #ffffff;
+transform: translateY(-50%);
+}
+.date-dwld span:nth-child(2):after {
+content: "";
+position: absolute;
+top: 50%;
+right: -14px;
+width: 5px;
+height: 5px;
+border-radius: 50px;
+background: #ffffff;
+transform: translateY(-50%);
+}
+
+.web-page-slide {
+    margin-top: 54px;
 }
