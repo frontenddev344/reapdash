@@ -587,6 +587,7 @@ display: none;
 gap: 15px;
 }
 
+/* brand */
 .brand-identity {
     position: relative;
     padding-top: 20px;
@@ -842,4 +843,11 @@ opacity: 0.15;
 background: #000;
 height: 1px;
 max-width: 96%;
+}
+
+/* web-page */
+
+.web-page {
+background: #264975;
+padding: 69px 10px 174px;
 }
