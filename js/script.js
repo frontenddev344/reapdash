@@ -110,6 +110,9 @@ $(document).ready(function() {
 
     $carousel.owlCarousel({
         items: 5.2,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        autoplayTimeout: 5000,
         loop: true,
         margin:12,
         center: true,

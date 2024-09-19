@@ -1069,31 +1069,26 @@ max-width: 96%;
 
 
 
-/* Owl Carousel Styles */
-/* .owl-carousel .item {
-background: #4DC7A0;
-padding: 30px;
-text-align: center;
-color: white;
-font-size: 18px;
-} */
+
 
 /* Progress Bar Styles */
-.progress-bar {
-position: relative;
-width: 100%;
-height: 8px;
-background-color: #e0e0e0;
-margin-top: 10px;
+.product-main .progress-bar {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: #e0e0e0;
+    max-width: 169px;
+    margin: 0 auto;
+    border-radius: 16px;
 }
 
-.progress-bar-fill {
-width: 0;
-height: 100%;
-background-color: #4DC7A0;
-transition: width 0.4s ease;
+.product-main .progress-bar-fill {
+    width: 0;
+    height: 100%;
+    background-color: #0A6CFD;
+    transition: width 0.4s ease;
+    border-radius: 12px;
 }
-
 
 /* product-main */
 .product-main{
@@ -1109,4 +1104,18 @@ color: #000000;
 .product-main  .view-all {
 border: 2px solid #011023;
 color: #011023;
+}
+
+.product-main .owl-carousel .item {
+transition: transform 0.4s ease, opacity 0.4s ease;  
+}
+.product-main  .owl-item {padding-top:20px;}
+
+.product-main  .owl-item.active.center {
+padding-top:0px;
+padding-bottom:0px;
+}
+
+.product-main  .owl-item.active.center img {
+min-height: 610px;
 }
