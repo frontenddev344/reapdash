@@ -603,7 +603,10 @@ padding-right: 20px;
 }
 
 .brand-text > img {
-width: 170px;
+    width: 170px;
+    position: relative;
+    top: 37px;
+    left: -18px;
 }
 .brand .grid {
 grid-template-columns: 634px 1fr;
