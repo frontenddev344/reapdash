@@ -1076,10 +1076,12 @@ max-width: 96%;
     position: relative;
     width: 100%;
     height: 8px;
-    background-color: #e0e0e0;
-    max-width: 169px;
+    background-color: var(--white);
+    max-width: 195px;
     margin: 0 auto;
-    border-radius: 16px;
+    border-radius: 10px;
+    position: relative;
+    top: 99px;
 }
 
 .product-main .progress-bar-fill {
@@ -1087,7 +1089,7 @@ max-width: 96%;
     height: 100%;
     background-color: #0A6CFD;
     transition: width 0.4s ease;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 /* product-main */
@@ -1130,14 +1132,14 @@ min-height: 610px;
 }
 
 .product-slider .owl-nav button.owl-prev:before {
-	background: url("../img/product-arrow.svg");
+	background: url("../img/product-arrow-2.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 .product-slider .owl-nav button.owl-next:before {
-	background: url("../img/product-arrow-2.svg");
+	background: url("../img/product-arrow.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 background-position: center;
@@ -1177,4 +1179,10 @@ font-style: normal;
 font-weight: 500;
 line-height: 160%; 
 letter-spacing: -0.84px;
+}
+.product-slider .owl-nav button span{
+    opacity: 0;
+}
+.product-slider .owl-nav button:hover{
+background-color: transparent!important;
 }
