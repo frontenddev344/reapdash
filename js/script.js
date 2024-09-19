@@ -58,6 +58,8 @@ $('.brand-slider').owlCarousel({
     autoplay: true,
     items: 2.5, // Show 2.5 slides at a time
     responsiveClass: true,
+    autoplaySpeed: 2000,
+    autoplayTimeout: 5000,
     dots: false,
     nav: true,
     responsive: {
@@ -78,6 +80,9 @@ $('.brand-slider').owlCarousel({
 $('.web-page-slider').owlCarousel({
     loop:true,
     margin:0,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    autoplayTimeout: 5000,
     dots: false,
     items: 4,
     nav:false,
