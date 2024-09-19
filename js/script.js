@@ -50,3 +50,24 @@ $('.banner-slide').on('changed.owl.carousel', function(event) {
     }, 20000); // 20-second pause
 });
 
+
+//brand slider
+$('.brand-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    items: 3,
+    responsiveClass:true,
+    dots:false,
+    nav:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:3,
+        },
+        1000:{
+            items:3,
+        }
+    }
+})
