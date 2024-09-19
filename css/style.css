@@ -588,14 +588,15 @@ gap: 15px;
 }
 
 .brand-identity {
-position: relative;
+    position: relative;
+    padding-top: 20px;
 }
-
 .brand-text {
 position: absolute;
 top: 0;
 left: 36px;
 width: calc(100% - 36px);
+padding-right: 20px;
 }
 
 .brand-text > img {
@@ -660,14 +661,15 @@ text-transform: uppercase;
 
 .brand {
     padding-left: 52px;
-    margin-top: 100px;
+    margin-top: 90px;
     overflow: hidden;
-    margin-bottom: 192px;
+    margin-bottom: 92px;
 }
 
 .gridflex {
 display: flex;
 gap: 12px;
+position: relative;
 }
 
 .gridflex .item:first-child {
@@ -678,9 +680,9 @@ width: 35%;
 width: 65%;
 }
 
-.brand-slider-text img {
-height: auto;
-max-width: 100%;
+.brand-slider-text > img {
+    height: 520px!important;
+    max-width: 100%;
 }
 
 .brand-slider-text {
@@ -757,13 +759,13 @@ margin: 0 20px;
 
 .brand-slider-text:hover .brand-bg-hover {top: 0;visibility: visible;opacity: 1;}
 .hover-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    filter: blur(4px);
-    opacity: 0.4;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 0;
+filter: blur(4px);
+opacity: 0.4;
 }
 .brand-bg-hover .btn {
 position: relative;
@@ -771,5 +773,73 @@ z-index: 2;
 }
 .brand-identity > img {
 width: 634px;
-height: 562px;
+height: 520px;
+}
+
+.brand-slider {
+position: relative;
+}
+
+.brand-slider .owl-nav {
+position: absolute;
+top: 18px;
+left: -106px;
+}
+
+.brand-slider .owl-nav button {
+position: relative;
+}
+
+.brand-slider .owl-nav button:before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 74px;
+height: 74px;
+}
+
+
+
+.brand-slider .owl-nav button.owl-prev:before {
+background: url("../img/slide-left.svg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+.brand-slider .owl-nav button.owl-next:before {
+background: url("../img/slider-right.svg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+.brand-slider .owl-nav .owl-prev {
+position: absolute;
+left: -92px;
+}
+.brand-slider .owl-nav button span {
+opacity: 0;
+}
+.brand-slider .owl-stage-outer {
+padding-top: 20px;
+padding-bottom: 101px;
+}
+.brand-slider-text{
+transition: all .3s ease;
+}
+.brand-slider-text:hover {
+transform: translateY(-20px);
+box-shadow: #00000087 0px 50px 100px -20px, rgb(61 57 57 / 30%) 0px 30px 60px -30px;
+}
+
+.gridflex:after {
+content: "";
+position: absolute;
+bottom: 0;
+width: 100%;
+left: 0;
+opacity: 0.15;
+background: #000;
+height: 1px;
+max-width: 96%;
 }
