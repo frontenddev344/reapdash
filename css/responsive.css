@@ -1,0 +1,32 @@
+@media (max-width: 991px) {
+.header_flex .mobile_btn {
+display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.links_bar .mobile_btn{
+  display: block;
+}
+.header .mobile_bar {
+display: flex;
+}
+.btns.desktop{
+  display: none;
+}
+.links_bar {
+position: fixed;
+top: 0;
+left: 0;
+width: 60%;
+height: 100%;
+background: red;
+flex-direction: column;
+align-items: start;
+padding: 28px;
+transition: all .3s ease;
+transform: translateX(-800px);
+}
+.links_bar.sidebar{
+transform: translateX(0);
+}
+}
