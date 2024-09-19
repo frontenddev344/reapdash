@@ -1051,3 +1051,18 @@ height: 301px;
 bottom: 0;
 right: 0;
 }
+
+.presentation .gridflex {
+padding-top: 70px;
+}
+.presentation  .gridflex:before {
+content: "";
+position: absolute;
+top: 0;
+width: 100%;
+left: 0;
+opacity: 0.15;
+background: #000;
+height: 1px;
+max-width: 96%;
+}
