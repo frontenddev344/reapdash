@@ -578,3 +578,6 @@ line-height: 150%;
 opacity: 0.5;
 text-align: right;
 }
+.copyright ul li:last-child a:before {
+    display: none;
+}
