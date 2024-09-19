@@ -109,36 +109,40 @@ $(document).ready(function() {
     var $progressBarFill = $('.progress-bar-fill');
 
     $carousel.owlCarousel({
-        items: 5.2,
+        loop: true,
+        items: 5,            // Show 5 full items (adjust for center mode)
         autoplay: true,
         autoplaySpeed: 2000,
         autoplayTimeout: 5000,
-        loop: true,
-        margin:12,
-        center: true,
+        margin: 12,          // Space between slides
+        startPosition: 0,    // Start from the first slide
+        center: true,        // Keep center mode active
         nav: true,
         dots: false,
         responsive: {
             0: {
-                items: 1 // 1 item on mobile
+                items: 1,    // 1 item on mobile
+                center: true
             },
             600: {
-                items: 2 // 2 items on tablet
+                items: 2,    // 2 items on tablets
+                center: true
             },
             1000: {
-                items: 5 // 3 items on desktop
+                items: 5, // Show 5.3 items on desktop (partial item on right side)
+                center: true
             }
         },
-        onInitialized: updateProgressBar, // Initial Progress Bar state
-        onTranslated: updateProgressBar  // Update Progress Bar when slide changes
+        onInitialized: updateProgressBar,  // Initial Progress Bar state
+        onTranslated: updateProgressBar    // Update Progress Bar when slide changes
     });
 
     function updateProgressBar(event) {
         var index = event.item.index - event.relatedTarget._clones.length / 2; // Adjust for clones
-        if (index === totalItems) {
+        if (index >= totalItems) {
             index = 0;
         }
-        var progressPercent = ((index + 1) / totalItems) * 100; // Percent of current slide
+        var progressPercent = ((index + 1) / totalItems) * 100; // Calculate current progress
         $progressBarFill.css('width', progressPercent + '%');
     }
 });

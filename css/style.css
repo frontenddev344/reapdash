@@ -1098,7 +1098,7 @@ background: url(../img/product-bnr.png);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
-padding: 61px 15px 232px;
+padding: 61px 0px 232px 15px;
 }
 .product-main .web-heading h3 {
 color: #000000;
@@ -1153,7 +1153,9 @@ transform: translateX(-50%);
 }
 
 .product-slider {
-position: relative;
+    position: relative;
+    margin-top: 69px;
+    margin-left: 102px;
 }
 
 .product-slider .owl-nav .owl-prev {
@@ -1181,8 +1183,11 @@ line-height: 160%;
 letter-spacing: -0.84px;
 }
 .product-slider .owl-nav button span{
-    opacity: 0;
+opacity: 0;
 }
 .product-slider .owl-nav button:hover{
 background-color: transparent!important;
+}
+.product-slider .owl-stage-outer {
+margin-left: 246px;
 }
