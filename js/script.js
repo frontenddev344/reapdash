@@ -104,15 +104,26 @@ $('.web-page-slider').owlCarousel({
 
 
 $(document).ready(function() {
-    var $carousel = $('.owl-carousel');
+    var $carousel = $('.product-slide');
     var totalItems = $carousel.find('.item').length;
     var $progressBarFill = $('.progress-bar-fill');
 
     $carousel.owlCarousel({
-        items: 1,
+        items: 5.2,
         loop: true,
         nav: true,
         dots: false,
+        responsive: {
+            0: {
+                items: 1 // 1 item on mobile
+            },
+            600: {
+                items: 2 // 2 items on tablet
+            },
+            1000: {
+                items: 3 // 3 items on desktop
+            }
+        },
         onInitialized: updateProgressBar, // Initial Progress Bar state
         onTranslated: updateProgressBar  // Update Progress Bar when slide changes
     });
