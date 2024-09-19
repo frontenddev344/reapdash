@@ -111,6 +111,8 @@ $(document).ready(function() {
     $carousel.owlCarousel({
         items: 5.2,
         loop: true,
+        margin:12,
+        center: true,
         nav: true,
         dots: false,
         responsive: {
@@ -121,7 +123,7 @@ $(document).ready(function() {
                 items: 2 // 2 items on tablet
             },
             1000: {
-                items: 3 // 3 items on desktop
+                items: 5 // 3 items on desktop
             }
         },
         onInitialized: updateProgressBar, // Initial Progress Bar state
