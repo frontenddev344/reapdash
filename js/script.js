@@ -102,7 +102,6 @@ $('.web-page-slider').owlCarousel({
 })
 
 
-
 $(document).ready(function() {
     var $carousel = $('.product-slide');
     var totalItems = $carousel.find('.item').length;
@@ -110,33 +109,36 @@ $(document).ready(function() {
 
     $carousel.owlCarousel({
         loop: true,
-        items: 5,            // Show 5 full items (adjust for center mode)
-        autoplay: true,
-        autoplaySpeed: 2000,
-        autoplayTimeout: 5000,
+        items: 6,            // Show 6 items
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        // autoplayTimeout: 5000,
         margin: 12,          // Space between slides
         startPosition: 0,    // Start from the first slide
-        center: true,        // Keep center mode active
         nav: true,
         dots: false,
         responsive: {
             0: {
                 items: 1,    // 1 item on mobile
-                center: true
             },
             600: {
                 items: 2,    // 2 items on tablets
-                center: true
             },
             1000: {
-                items: 5, // Show 5.3 items on desktop (partial item on right side)
-                center: true
+                items: 5.2,  // Show 5.2 items on desktop
             }
         },
-        onInitialized: updateProgressBar,  // Initial Progress Bar state
-        onTranslated: updateProgressBar    // Update Progress Bar when slide changes
+        onInitialized: function(event) {
+            updateProgressBar(event);
+            updateMiddleSlide(event);   // Call custom function to add middle slide class
+        },
+        onTranslated: function(event) {
+            updateProgressBar(event);
+            updateMiddleSlide(event);   // Call custom function to add middle slide class
+        }
     });
 
+    // Update Progress Bar
     function updateProgressBar(event) {
         var index = event.item.index - event.relatedTarget._clones.length / 2; // Adjust for clones
         if (index >= totalItems) {
@@ -144,5 +146,17 @@ $(document).ready(function() {
         }
         var progressPercent = ((index + 1) / totalItems) * 100; // Calculate current progress
         $progressBarFill.css('width', progressPercent + '%');
+    }
+
+    // Add 'middle-slide' class to the middle slide
+    function updateMiddleSlide(event) {
+        var visibleItems = event.page.size;  // Number of currently visible items
+        var middleIndex = Math.floor(visibleItems / 2);  // Calculate middle item index
+        
+        // Remove the 'middle-slide' class from all slides
+        $carousel.find('.owl-item').removeClass('middle-slide');
+
+        // Add 'middle-slide' class to the middle visible item
+        $carousel.find('.owl-item.active').eq(middleIndex).addClass('middle-slide');
     }
 });

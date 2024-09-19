@@ -1113,13 +1113,15 @@ transition: transform 0.4s ease, opacity 0.4s ease;
 }
 .product-main  .owl-item {padding-top:20px;}
 
-.product-main  .owl-item.active.center {
+.product-main  .owl-item.active.middle-slide {
 padding-top:0px;
 padding-bottom:0px;
+transition: all .3s ease;
 }
 
-.product-main  .owl-item.active.center img {
-min-height: 610px;
+.product-main  .owl-item.active.middle-slide img {
+    min-height: 575px;
+    transition: all .3s ease;
 }
 .product-slider .owl-nav button:before {
 	content: "";
@@ -1187,7 +1189,4 @@ opacity: 0;
 }
 .product-slider .owl-nav button:hover{
 background-color: transparent!important;
-}
-.product-slider .owl-stage-outer {
-margin-left: 246px;
 }
