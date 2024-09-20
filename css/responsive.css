@@ -44,6 +44,9 @@ gap: 44px;
   .banner-video-text p {
     font-size: 18px;
 }
+.email-main .swiper-button-next {
+  left: 56.4%;
+}
 }
 
 @media (max-width: 1400px) {

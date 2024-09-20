@@ -184,7 +184,7 @@ $('.slider-for').slick({
 
 
 
-  var sliderSelector = ".swiper-container",
+var sliderSelector = ".swiper-container",
   options = {
     init: false,
     loop: true,
@@ -193,7 +193,7 @@ $('.slider-for').slick({
     centeredSlides: true,
     effect: "coverflow",
     coverflowEffect: {
-      rotate: 50,
+      rotate: 45,
       stretch: 0,
       depth: 100,
       modifier: 1,
@@ -220,6 +220,11 @@ $('.slider-for').slick({
       1023: {
         slidesPerView: 1,
         spaceBetween: 0
+      },
+      1500: {
+        coverflowEffect: {
+            rotate: 35,
+          }
       }
     },
     on: {
