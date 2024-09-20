@@ -1461,9 +1461,10 @@ font-size: 12px;
     transform: translateX(-50px);
     top: unset;
     bottom: 30px;
-    right: 43%;
+    right: unset;
     background: url(../img/product-arrow.svg);
     background-repeat: no-repeat;
+    left: 55%;
 }
   
   .email-main .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {

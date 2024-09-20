@@ -23,7 +23,15 @@ gap: 44px;
 .gallery-slider-main .slider.slider-nav .slick-prev {
   left: 2px;
 }
+.brand-text p {
+  font-size: 22px;
 }
+.email-main .swiper-button-next {
+  left: 55.6%;
+}
+}
+
+
 @media (max-width: 1600px) {
   .header_flex .links_bar {
     gap: 20px;
@@ -44,6 +52,9 @@ gap: 44px;
 }
 .media-hub-text {
   margin-left: 173px;
+}
+.banner-video-text {
+  padding: 0 27px;
 }
 }
 
