@@ -992,7 +992,6 @@ margin-top: 35px;
 
 .web-page-slider-text {
     position: relative;
-    min-height: 464px;
 }
 .web-page-slider-text:hover:before {
 width: 100%;
@@ -1013,6 +1012,9 @@ height: calc(100% + 48px);
     z-index: -1;
 }
 
+.web-page-slider .owl-item {
+min-height: 507px;
+}
 .web-page-slide .owl-stage-outer {
     padding-bottom: 26px;
     padding-top: 11px;
@@ -1582,3 +1584,5 @@ transition: all .3s ease;
 .gallery-slider-main .slick-dots {
     display: none!important;
 }
+
+
