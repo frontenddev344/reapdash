@@ -1,3 +1,20 @@
+
+@media (max-width: 1700px) {
+.header_flex .links_bar {
+gap: 44px;
+}
+.banner-ipad img {
+  height: auto;
+}
+.media-hub-text h1 {
+  font-size: 90px;
+}
+.banner-video-text p {
+  font-size: 21px;
+}
+}
+
+
 @media (max-width: 1180px) {
   .swiper-container {
     height: 28vw;
