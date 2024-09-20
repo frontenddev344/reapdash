@@ -189,22 +189,25 @@ $('.slider-for').slick({
     init: false,
     loop: true,
     speed: 800,
-    slidesPerView: 4, // or 'auto'
-    // spaceBetween: 10,
+    slidesPerView: 4,
     centeredSlides: true,
-    effect: "coverflow", // 'cube', 'fade', 'coverflow',
+    effect: "coverflow",
     coverflowEffect: {
-      rotate: 50, // Slide rotate in degrees
-      stretch: 0, // Stretch space between slides (in px)
-      depth: 100, // Depth offset in px (slides translate in Z axis)
-      modifier: 1, // Effect multipler
-      slideShadows: true // Enables slides shadows
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+      scale: 0.8
     },
     grabCursor: true,
     parallax: true,
     pagination: {
       el: ".swiper-pagination",
-      clickable: true
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>'; // Create custom bullet for pagination
+      }
     },
     navigation: {
       nextEl: ".swiper-button-next",
@@ -219,14 +222,22 @@ $('.slider-for').slick({
         spaceBetween: 0
       }
     },
-    // Events
     on: {
       imagesReady: function () {
         this.el.classList.remove("loading");
+      },
+      slideChange: function () {
+        // Update counter display
+        const currentIndex = this.realIndex + 1; // realIndex is 0-based
+        const totalSlides = this.slides.length - 2; // Exclude duplicated slides in loop mode
+        document.querySelector('.swiper-counter').textContent = `${currentIndex} / ${totalSlides}`;
       }
     }
   };
-var mySwiper = new Swiper(sliderSelector, options);
 
-// Initialize slider
+var mySwiper = new Swiper(sliderSelector, options);
 mySwiper.init();
+
+// Initialize counter on first load
+const totalSlides = mySwiper.slides.length - 2; // Exclude duplicated slides in loop mode
+document.querySelector('.swiper-counter').textContent = `1 / ${totalSlides}`; // Show initial counter
