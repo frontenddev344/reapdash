@@ -80,7 +80,7 @@ $('.brand-slider').owlCarousel({
 $('.web-page-slider').owlCarousel({
     loop:true,
     margin:0,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000,
     autoplayTimeout: 5000,
     dots: false,
@@ -178,5 +178,6 @@ $('.slider-for').slick({
     asNavFor: '.slider-for',
     dots: true,
     centerMode:false,
-    focusOnSelect: true
+    focusOnSelect: true,
+    arrows: true
   });
