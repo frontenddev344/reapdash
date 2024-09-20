@@ -55,7 +55,7 @@ $('.banner-slide').on('changed.owl.carousel', function(event) {
 $('.brand-slider').owlCarousel({
     loop: true,
     margin: 12,
-    // autoplay: true,
+    autoplay: true,
     items: 2.5, // Show 2.5 slides at a time
     responsiveClass: true,
     autoplaySpeed: 2000,
@@ -80,7 +80,7 @@ $('.brand-slider').owlCarousel({
 $('.web-page-slider').owlCarousel({
     loop:true,
     margin:0,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     autoplayTimeout: 5000,
     dots: false,
@@ -110,9 +110,9 @@ $(document).ready(function() {
     $carousel.owlCarousel({
         loop: true,
         items: 6,            // Show 6 items
-        // autoplay: true,
-        // autoplaySpeed: 2000,
-        // autoplayTimeout: 5000,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        autoplayTimeout: 5000,
         margin: 12,          // Space between slides
         startPosition: 0,    // Start from the first slide
         nav: true,
