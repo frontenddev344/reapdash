@@ -538,6 +538,9 @@ font-weight: 600;
 line-height: 110%; /* 19.81px */
 letter-spacing: 0.54px;
 text-transform: uppercase;
+position: relative;
+z-index: 1;
+overflow: hidden;
 }
 
 .footer-btn a img {
@@ -1617,3 +1620,32 @@ min-height: 577px !important;
 .product-main .owl-item.active.middle-slide img {
     padding: 0;
 }
+
+
+.footer-btn a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    width: 0;
+    height: 100%;
+    transition: all .3s ease;
+    border-radius: 250px;
+    z-index: -1;
+    }
+    
+    .footer-btn a:hover:before {
+    width: 100%;
+    }
+    
+    .footer-btn a:hover {
+    color: #000;
+    }
+    
+    .footer-btn a:hover img {
+    filter: brightness(0) invert(1);
+    z-index: 1;
+    position: relative;
+    filter: brightness(0%);
+    }
