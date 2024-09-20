@@ -1082,6 +1082,7 @@ max-width: 96%;
     border-radius: 10px;
     position: relative;
     top: 99px;
+    left: -35px;
 }
 
 .product-main .progress-bar-fill {
@@ -1161,13 +1162,13 @@ transform: translateX(-50%);
 }
 
 .product-slider .owl-nav .owl-prev {
-position: absolute;
-left: -129px;
+    position: absolute;
+    left: -161px;
 }
 
 .product-slider .owl-nav .owl-next {
-position: absolute;
-right: -175px;
+    position: absolute;
+    right: -138px;
 }
 
 .reap-heading {
@@ -1183,6 +1184,7 @@ font-style: normal;
 font-weight: 500;
 line-height: 160%; 
 letter-spacing: -0.84px;
+padding-left: 31px;
 }
 .product-slider .owl-nav button span{
 opacity: 0;
