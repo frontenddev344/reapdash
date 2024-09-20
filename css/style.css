@@ -834,8 +834,8 @@ padding-bottom: 101px;
 transition: all .3s ease;
 }
 .brand-slider-text:hover {
-transform: translateY(-20px);
-box-shadow: #00000087 0px 50px 100px -20px, rgb(61 57 57 / 30%) 0px 30px 60px -30px;
+    transform: translateY(-20px);
+    box-shadow: #00000000 0px 50px 100px -20px, rgb(61 57 57 / 90%) 0px 30px 60px -30px;
 }
 
 .gridflex:after {
@@ -1200,8 +1200,13 @@ top: 0;
 left: 0;
 }
 .product-main .shape-bar img:last-child {
-    left: 47%;
-    position: absolute;
-    bottom: 112px;
-    transform: translateX(-50%);
+left: 47%;
+position: absolute;
+bottom: 112px;
+transform: translateX(-50%);
 }
+
+
+
+
+/* video */
