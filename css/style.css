@@ -1100,6 +1100,7 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 padding: 61px 0px 232px 15px;
+position: relative;
 }
 .product-main .web-heading h3 {
 color: #000000;
@@ -1157,7 +1158,7 @@ transform: translateX(-50%);
 
 .product-slider {
     position: relative;
-    margin-top: 69px;
+    margin-top: 36px;
     margin-left: 102px;
 }
 
@@ -1191,4 +1192,16 @@ opacity: 0;
 }
 .product-slider .owl-nav button:hover{
 background-color: transparent!important;
+}
+
+.product-main .shape-bar img:first-child {
+position: absolute;
+top: 0;
+left: 0;
+}
+.product-main .shape-bar img:last-child {
+    left: 47%;
+    position: absolute;
+    bottom: 112px;
+    transform: translateX(-50%);
 }
