@@ -1239,7 +1239,9 @@ text-align: right;
 .banner .banner-radius-img img {
 height: 96px;
 }
-
+.video .brand-slider-text:hover {
+box-shadow: #00000026 0px 50px 100px -20px, rgb(1 0 0) -1px 32px 64px -31px;
+}
 
 
 /* gallery */
@@ -1663,4 +1665,7 @@ transition: padding 0.3s ease; /* Smooth transition for padding changes */
 
 .email-main .web-gif img {
 margin-left: -31px;
+}
+.email-main  .web-gif {
+    margin-top: 64px;
 }
