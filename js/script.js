@@ -83,7 +83,7 @@ $('.brand-slider').owlCarousel({
 $('.web-page-slider').owlCarousel({
     loop:true,
     margin:0,
-    autoplay: true,
+    autoplay: auto,
     autoplaySpeed: 2000,
     autoplayTimeout: 5000,
     dots: false,
@@ -95,12 +95,15 @@ $('.web-page-slider').owlCarousel({
             items:1,
         },
         600:{
-            items:3,
+            items:2,
             
         },
         1000:{
-            items:4,
-        }
+            items:3,
+        },
+        1200:{
+          items:4,
+      }
     }
 })
 
