@@ -55,7 +55,7 @@ $('.banner-slide').on('changed.owl.carousel', function(event) {
 $('.brand-slider').owlCarousel({
     loop: true,
     margin: 12,
-    autoplay: true,
+    autoplay: false,
     items: 2.5, // Show 2.5 slides at a time
     responsiveClass: true,
     autoplaySpeed: 2000,

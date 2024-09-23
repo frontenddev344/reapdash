@@ -845,7 +845,7 @@ transition: all .3s ease;
 }
 .brand-slider-text:hover {
     transform: translateY(-20px);
-    box-shadow: #00000026 0px 50px 100px -20px, rgb(18 12 12) 0px 24px 64px -31px;
+    box-shadow: #00000026 0px 50px 100px -20px, rgb(1 0 0) -1px 32px 64px -31px;
 }
 
 .gridflex:after {
