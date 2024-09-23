@@ -299,7 +299,7 @@ var sliderSelector = ".swiper-container",
       },
       1500: {
         coverflowEffect: {
-            rotate: 35,
+            rotate: 30,
           }
       }
     },

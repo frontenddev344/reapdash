@@ -1501,6 +1501,7 @@ font-size: 12px;
 
   .email-main .web-heading {
 margin-bottom: 36px;
+margin-top: 11px;
 }
 .eyes {
     text-align: center;
@@ -1566,10 +1567,10 @@ color:#fff;
 }
 
 .shapes-take img {
-    position: absolute;
-    left: -8px;
-    bottom: 0px;
-    z-index: -1;
+position: absolute;
+left: -8px;
+bottom: 0px;
+z-index: -1;
 }
 
 .banner-video:before {
@@ -1587,7 +1588,7 @@ transition: all .3s ease;
 }
 
 .gallery-slider-main .slick-dots {
-    display: none!important;
+display: none!important;
 }
 
 
@@ -1606,7 +1607,7 @@ border-color: #4183f2;
 background: #061D3F;
 }
 .web-page .view-all:hover {
-    border-color: #264975;
+border-color: #264975;
 }
 
 .product-main  .owl-item {
@@ -1616,47 +1617,50 @@ align-items: center;
 min-height: 577px !important;
 }
 .product-main .owl-item img {
-    padding: 15px 0;
-    border-radius: 44px;
-    height: 500px;
-    object-fit: cover;
+padding: 15px 0;
+border-radius: 44px;
+height: 500px;
+object-fit: cover;
 }
 .product-main  .owl-item.active.middle-slide {
-    transition: all .3s ease;
-    min-height: 573px !important;
+transition: all .3s ease;
+min-height: 573px !important;
 }
 
 
 .footer-btn a:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #ffffff;
-    width: 0;
-    height: 100%;
-    transition: all .3s ease;
-    border-radius: 250px;
-    z-index: -1;
-    }
-    
-    .footer-btn a:hover:before {
-    width: 100%;
-    }
-    
-    .footer-btn a:hover {
-    color: #000;
-    }
-    
-    .footer-btn a:hover img {
-    filter: brightness(0) invert(1);
-    z-index: 1;
-    position: relative;
-    filter: brightness(0%);
-    }
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+background: #ffffff;
+width: 0;
+height: 100%;
+transition: all .3s ease;
+border-radius: 250px;
+z-index: -1;
+}
+
+.footer-btn a:hover:before {
+width: 100%;
+}
+
+.footer-btn a:hover {
+color: #000;
+}
+
+.footer-btn a:hover img {
+filter: brightness(0) invert(1);
+z-index: 1;
+position: relative;
+filter: brightness(0%);
+}
 
 
-    .web-page-slider .owl-item {
-        transition: padding 0.3s ease; /* Smooth transition for padding changes */
-    }
-    
+.web-page-slider .owl-item {
+transition: padding 0.3s ease; /* Smooth transition for padding changes */
+}
+
+.email-main .web-gif img {
+margin-left: -31px;
+}
