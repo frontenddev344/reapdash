@@ -81,7 +81,7 @@ $('.brand-slider').owlCarousel({
 
 
 
- web-page-slider
+//  web-page-slider
 
 $(document).ready(function() {
   $('.web-page-slider').owlCarousel({
