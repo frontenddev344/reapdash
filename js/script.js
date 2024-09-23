@@ -162,7 +162,7 @@ $(document).ready(function() {
               items: 4.2,  // Show 5.2 items on desktop
           },
           1800: {
-            items: 5.3,  // Show 5.2 items on desktop
+            items: 5.2,  // Show 5.2 items on desktop
         }
         },
         onInitialized: function(event) {
