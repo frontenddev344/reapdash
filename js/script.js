@@ -64,7 +64,7 @@ $('.brand-slider').owlCarousel({
     nav: true,
     responsive: {
         0: {
-            items: 1,
+            items: 1.2,
         },
         600: {
             items: 1.5,
@@ -189,10 +189,45 @@ $('.slider-for').slick({
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     dots: true,
-    centerMode:false,
+    centerMode: false,
     focusOnSelect: true,
-    arrows: true
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
+  
 
 
 
@@ -230,6 +265,10 @@ var sliderSelector = ".swiper-container",
         slidesPerView: 2
       },
       1023: {
+        slidesPerView: 2,
+        spaceBetween: 0
+      },
+      575: {
         slidesPerView: 1,
         spaceBetween: 0
       },

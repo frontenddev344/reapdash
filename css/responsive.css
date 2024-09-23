@@ -13,7 +13,11 @@ min-height: 544px !important;
   min-height: 589px !important;
 }
 .product-slider .owl-nav .owl-prev {
-  left: -166px;
+  left: -172px;
+
+}
+.product-slider .owl-nav .owl-next {
+  right: -128px;
 }
 }
 
@@ -100,6 +104,12 @@ height: 10px;
 }
 .banner .banner-radius-img img {
   height: 113px;
+}
+.product-slider .owl-nav .owl-prev {
+  left: -180px;
+}
+.email-main .swiper-button-next {
+  left: 56.6%;
 }
 }
 
@@ -216,19 +226,20 @@ align-items: start;
 .product-slider {
   margin-left: 35px;
 }
+.reap-heading p {
+padding-left: 0px;
+margin-left: -27px;
+}
+.email-main .swiper-button-next {
+  left: 50%;
+  transform: translateX(88%);
+}
 }
 
 
 
 
-@media (max-width: 1023px) {
-  .swiper-container {
-    height: 40vw;
-  }
-  .swiper-container.swiper-container-coverflow {
-    padding-top: 0;
-  }
-}
+
 
 
 @media (max-width: 991px) {
@@ -271,6 +282,15 @@ padding: 0 21px;
 }
 .product-main .owl-item img {
   min-height: auto;
+}
+.footer-top .grid-cols-2 {
+  grid-template-columns: 1fr 300px;
+}
+.copyright ul {
+  justify-content: center;
+}
+.copyright-adress p {
+  text-align: center;
 }
 }
 
@@ -347,6 +367,20 @@ font-size: 18px;
 .web-heading h3 {
   font-size: 40px;
 }
+.product-slider .owl-nav .owl-next {
+  right: -117px;
+}
+.gallery-slider-main .slider-nav .product-slider-item > img {
+  height: auto;
+}
+.footer-top .grid-cols-2 {
+  grid-template-columns: 1fr;
+  gap: 19px;
+}
+.footer-top-flex {
+  max-width: 100%;
+}
+
 }
 
 @media (max-width: 575px) {
@@ -363,11 +397,56 @@ font-size: 18px;
 .web-page-shpes img:first-child {
   z-index: 0;
 }
+.product-slider .owl-nav .owl-next {
+  right: -109px;
+}
+.email-main .swiper-container {
+  max-width: 94%;
+}
+.gallery-slider-main .date-dwld {
+  display: none;
+}
+.footer-top-flex {
+  flex-direction: column;
+  gap: 37px;
+}
+.footer-btn {
+  text-align: center;
+  margin-top: 18px;
+}
 }
 
 
 @media (max-width: 480px) {
 .media-hub-text h1 {
   font-size: 63px;
+}
+.brand-slider .owl-nav {
+  right: 75px;
+}
+}
+
+@media (max-width: 440px) {
+.header .shapes img {
+left: 83px;
+width: 147px;
+}
+.header .shapes {
+max-width: 250px;
+}
+.header .logo img {
+width: 149px;
+}
+.header .mobile_bar {
+padding-top: 32px;
+padding-bottom: 21px;
+padding-right: 28px;
+}
+.primary-btn {
+padding: 17px 27px;
+font-size: 16px;
+}
+.media-hub-text h1 {
+  font-size: 50px;
 }
 }
