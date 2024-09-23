@@ -902,6 +902,7 @@ font-weight: 600;
 line-height: 140%; /* 22.4px */
 letter-spacing: 0.48px;
 text-transform: uppercase;
+overflow: hidden;
 }
 .web-page .container {
 max-width: 1520px;
