@@ -90,7 +90,7 @@ $(document).ready(function() {
       loop: true,
       margin: 0,
       autoplay: true,
-      dots: true,
+      dots: false,
       items: 4,
       nav: false,
       responsive: {
