@@ -9,9 +9,9 @@
 
 //  droupdown
 
-    $(document).ready(function(){
-  $(".links_bar li").click(function(){
-    $(".droupdown").toggle();
+$(document).ready(function() {
+  $(".links_bar li").click(function() {
+    $(".dropdown").toggle();
   });
 });
 

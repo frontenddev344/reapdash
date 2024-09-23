@@ -380,7 +380,9 @@ font-size: 18px;
 .footer-top-flex {
   max-width: 100%;
 }
-
+.email-main .swiper-container {
+  height: 625px;
+}
 }
 
 @media (max-width: 575px) {
