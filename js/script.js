@@ -83,7 +83,7 @@ $('.brand-slider').owlCarousel({
 $('.web-page-slider').owlCarousel({
     loop:true,
     margin:0,
-    autoplay: auto,
+    autoplay: true,
     autoplaySpeed: 2000,
     autoplayTimeout: 5000,
     dots: false,
@@ -116,7 +116,7 @@ $(document).ready(function() {
     $carousel.owlCarousel({
         loop: true,
         items: 6,            // Show 6 items
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         autoplayTimeout: 5000,
         margin: 12,          // Space between slides
@@ -125,14 +125,20 @@ $(document).ready(function() {
         dots: false,
         responsive: {
             0: {
-                items: 1,    // 1 item on mobile
+                items: 1.2,    // 1 item on mobile
             },
             600: {
-                items: 2,    // 2 items on tablets
+                items: 2.2,    // 2 items on tablets
             },
             1000: {
-                items: 5.2,  // Show 5.2 items on desktop
-            }
+                items: 3.2,  // Show 5.2 items on desktop
+            },
+            1600: {
+              items: 4.2,  // Show 5.2 items on desktop
+          },
+          1800: {
+            items: 5.3,  // Show 5.2 items on desktop
+        }
         },
         onInitialized: function(event) {
             updateProgressBar(event);

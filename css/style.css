@@ -1616,10 +1616,13 @@ min-height: 577px !important;
 }
 .product-main .owl-item img {
     padding: 15px 0;
+    border-radius: 44px;
+    height: 500px;
+    object-fit: cover;
 }
-
-.product-main .owl-item.active.middle-slide img {
-    padding: 0;
+.product-main  .owl-item.active.middle-slide {
+    transition: all .3s ease;
+    min-height: 573px !important;
 }
 
 
