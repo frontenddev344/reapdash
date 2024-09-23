@@ -1225,9 +1225,7 @@ transform: translateX(-50%);
 .video .brand-slider-text {
     box-shadow: #00000000 0px 50px 100px -20px, rgb(61 57 57 / 90%) -8px 15px 60px -30px;
 }
-.video .brand-slider-text:hover {
-    box-shadow: #0000001f 0px 50px 100px -20px, rgb(61 57 57 / 90%) -8px 15px 60px -30px;
-}
+
 .video .brand-text > img {
 left: -58px;
 }

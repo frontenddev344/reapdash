@@ -83,10 +83,10 @@ $('.brand-slider').owlCarousel({
 $('.web-page-slider').owlCarousel({
     loop:true,
     margin:0,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     autoplayTimeout: 5000,
-    dots: false,
+    dots: true,
     items: 4,
     nav:false,
     responsiveClass:true,
@@ -116,7 +116,7 @@ $(document).ready(function() {
     $carousel.owlCarousel({
         loop: true,
         items: 6,            // Show 6 items
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         autoplayTimeout: 5000,
         margin: 12,          // Space between slides
