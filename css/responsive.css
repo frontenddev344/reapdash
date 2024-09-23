@@ -234,6 +234,9 @@ margin-left: -27px;
   left: 50%;
   transform: translateX(88%);
 }
+.cross-bar{
+  display: block;
+  }
 }
 
 
@@ -425,6 +428,9 @@ font-size: 18px;
 }
 .brand-slider .owl-nav {
   right: 75px;
+}
+.links_bar {
+width: 80%;
 }
 }
 

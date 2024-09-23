@@ -4,7 +4,9 @@
 });
 
 
-
+$(".cross-bar").click(function(){
+  $(".links_bar").removeClass("sidebar");
+});
 
 
 //  droupdown

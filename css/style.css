@@ -126,6 +126,19 @@ z-index: -1;
 
 
 /*--header--*/
+.header_flex .links_bar li.cross-bar {
+    position: absolute;
+    right: 18px;
+    top: 10px;
+    }
+    
+    .header_flex .links_bar li.cross-bar i {
+    font-size: 22px;
+    color: #fff;
+    }
+.cross-bar{
+display: none;
+}
 .header_flex {
 display: flex;
 justify-content: space-between;
