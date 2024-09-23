@@ -80,32 +80,57 @@ $('.brand-slider').owlCarousel({
 
 
 
-$('.web-page-slider').owlCarousel({
-    loop:true,
-    margin:0,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    autoplayTimeout: 5000,
-    dots: true,
-    items: 4,
-    nav:false,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-        },
-        600:{
-            items:2,
-            
-        },
-        1000:{
-            items:3,
-        },
-        1200:{
-          items:4,
+
+ web-page-slider
+
+$(document).ready(function() {
+  $('.web-page-slider').owlCarousel({
+      loop: true,
+      margin: 0,
+      autoplay: true,
+      dots: true,
+      items: 4,
+      nav: false,
+      responsive: {
+          0: {
+              items: 1,
+          },
+          600: {
+              items: 2,
+          },
+          1000: {
+              items: 3,
+          },
+          1200: {
+              items: 4,
+          }
       }
-    }
-})
+  }).on('initialized.owl.carousel changed.owl.carousel', function(event) {
+      // Use setTimeout to ensure DOM is ready
+      setTimeout(function() {
+          // Get all active items
+          var activeItems = $('.web-page-slider .owl-item.active');
+
+          // Debugging: Check active items
+          console.log("Active Items Count: ", activeItems.length);
+
+          // Reset padding for all active items
+          activeItems.css({
+              'padding-left': '0',
+              'padding-right': '0'
+          });
+
+          // Add padding to the first and last active items
+          if (activeItems.length > 0) {
+              activeItems.first().css('padding-left', '20px');  // Add left padding for the first active item
+              activeItems.last().css('padding-right', '20px');  // Add right padding for the last active item
+          }
+      }, 50); // Delay to ensure DOM updates
+  });
+});
+
+
+
 
 
 $(document).ready(function() {

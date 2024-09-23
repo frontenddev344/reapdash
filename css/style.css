@@ -1000,6 +1000,8 @@ position: relative;
 .web-page-slider-text:hover:before {
 width: 100%;
 height: calc(100% + 48px);
+width: calc(100% + 18px);
+left: -9px;
 }
 
 .web-page-slider-text:before {
@@ -1651,3 +1653,9 @@ min-height: 577px !important;
     position: relative;
     filter: brightness(0%);
     }
+
+
+    .web-page-slider .owl-item {
+        transition: padding 0.3s ease; /* Smooth transition for padding changes */
+    }
+    
