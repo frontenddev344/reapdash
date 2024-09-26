@@ -85,7 +85,9 @@ height: 500px!important;
 }.email-main .swiper-container {
   height: 600px;
 }
-
+.gallery-slider-main .slider.slider-for .product-slider-item img {
+  height: 500px;
+}
 }
 
 @media (max-width: 1400px) {
@@ -413,7 +415,7 @@ font-size: 18px;
   right: -117px;
 }
 .gallery-slider-main .slider-nav .product-slider-item > img {
-  height: auto;
+  height: 344px;
 }
 .footer-top .grid-cols-2 {
   grid-template-columns: 1fr;
@@ -437,6 +439,9 @@ font-size: 18px;
 }
 .product-main .container {
   padding-right: 37px;
+}
+.view-flex {
+  max-width: 100%;
 }
 }
 

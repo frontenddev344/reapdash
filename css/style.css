@@ -1562,7 +1562,9 @@ margin: 0 auto;
 right: 0;
 }
 .gallery-slider-main .web-heading {
-padding-top: 96px;
+    padding-top: 96px;
+    padding-left: 11px;
+    padding-right: 12px;
 }
 .view-all{
 position: relative;
