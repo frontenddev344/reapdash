@@ -19,6 +19,9 @@ min-height: 544px !important;
 .product-slider .owl-nav .owl-next {
   right: -128px;
 }
+.email-main .swiper-container {
+  height: 800px;
+}
 }
 
 
@@ -66,7 +69,10 @@ height: 500px!important;
   .header_flex .links_bar {
     gap: 20px;
 }
+
 }
+
+
 @media (max-width: 1500px) {
   .view-flex {
     margin-top: 66px;
@@ -76,7 +82,10 @@ height: 500px!important;
 }
 .email-main .swiper-button-next {
   left: 56.4%;
+}.email-main .swiper-container {
+  height: 600px;
 }
+
 }
 
 @media (max-width: 1400px) {
@@ -133,6 +142,9 @@ padding-left: 33px;
 .web-page-slide {
 margin-left: 0;
 width: 100%;
+}
+.email-shapes img:last-child {
+width: auto;
 }
 }
 
@@ -418,6 +430,13 @@ font-size: 18px;
 }
 .gallery-slider-main .slider.slider-for .product-slider-item img {
   height: 448px;
+}
+.email-main .container {
+  padding-left: 38px;
+  padding-right: 38px;
+}
+.product-main .container {
+  padding-right: 37px;
 }
 }
 

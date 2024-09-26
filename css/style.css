@@ -1539,9 +1539,10 @@ left: 44px;
 position: absolute;
 }
 .email-shapes img:last-child {
-top: 0;
-left: 19%;
-height: 82%;
+    top: 0;
+    left: 19%;
+    height: 82%;
+    width: 59%;
 }
 .gallery-slider-main {
 margin-top: 90px;

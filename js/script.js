@@ -259,7 +259,7 @@ $('.slider-for').slick({
 
 
 
-var sliderSelector = ".swiper-container",
+  var sliderSelector = ".swiper-container",
   options = {
     init: false,
     loop: true,
@@ -268,15 +268,16 @@ var sliderSelector = ".swiper-container",
     centeredSlides: true,
     effect: "coverflow",
     coverflowEffect: {
-      rotate: 45,
+      rotate: 43,
       stretch: 0,
       depth: 100,
       modifier: 1,
       slideShadows: true,
-      scale: 0.8
+      scale: 0.4
     },
     grabCursor: true,
     parallax: true,
+    spaceBetween: 20, // Add space between slides (in pixels)
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -289,21 +290,23 @@ var sliderSelector = ".swiper-container",
       prevEl: ".swiper-button-prev"
     },
     breakpoints: {
+      1500: {
+        coverflowEffect: {
+          rotate: 30,
+        },
+        spaceBetween: 30 // Change space between slides for large screens
+      },
       1180: {
-        slidesPerView: 2
+        slidesPerView: 2,
+        spaceBetween: 20 // Adjust spacing for this breakpoint
       },
       1023: {
         slidesPerView: 2,
-        spaceBetween: 0
+        spaceBetween: 15 // Space between slides for smaller screens
       },
       575: {
         slidesPerView: 1,
-        spaceBetween: 0
-      },
-      1500: {
-        coverflowEffect: {
-            rotate: 30,
-          }
+        spaceBetween: 10 // Smaller gap for very small screens
       }
     },
     on: {
@@ -324,4 +327,5 @@ mySwiper.init();
 
 // Initialize counter on first load
 const totalSlides = mySwiper.slides.length - 2; // Exclude duplicated slides in loop mode
-document.querySelector('.swiper-counter').textContent = `1 / ${totalSlides}`; // Show initial counter
+document.querySelector('.swiper-counter').textContent = `1 / ${totalSlides}`;
+
