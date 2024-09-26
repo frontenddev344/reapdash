@@ -26,9 +26,7 @@ min-height: 544px !important;
 .header_flex .links_bar {
 gap: 44px;
 }
-.banner-ipad img {
-  height: auto;
-}
+
 .media-hub-text h1 {
   font-size: 90px;
 }
@@ -55,7 +53,12 @@ gap: 44px;
 .banner .banner-radius-img img {
   height: 63px;
 }
-
+.brand-identity > img {
+height: 500px;
+}
+.brand-slider-text > img {
+height: 500px!important;
+}
 }
 
 
@@ -110,6 +113,9 @@ height: 10px;
 }
 .email-main .swiper-button-next {
   left: 56.6%;
+}
+.banner-ipad img {
+  height: auto;
 }
 }
 

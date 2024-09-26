@@ -656,12 +656,13 @@ display: flex;
 justify-content: space-between;
 max-width: 553px;
 position: relative;
+align-items: center;
 }
 
 .view-flex:before {
 content: "";
 position: absolute;
-top: -25px;
+top: -32px;
 left: 0;
 width: 100%;
 height: 2px;
@@ -709,7 +710,7 @@ width: 65%;
 }
 
 .brand-slider-text > img {
-    height: 520px!important;
+    height: 508px!important;
     max-width: 100%;
 }
 
@@ -801,7 +802,7 @@ z-index: 2;
 }
 .brand-identity > img {
 width: 634px;
-height: 520px;
+height: 508px;
 }
 
 .brand-slider {
@@ -1582,10 +1583,10 @@ color:#fff;
 }
 
 .shapes-take img {
-position: absolute;
-left: -8px;
-bottom: 0px;
-z-index: -1;
+    position: absolute;
+    left: -7px;
+    bottom: 0px;
+    z-index: -1;
 }
 
 .banner-video:before {
