@@ -112,10 +112,27 @@ height: 10px;
   left: -180px;
 }
 .email-main .swiper-button-next {
-  left: 56.6%;
+left: 56.6%;
 }
 .banner-ipad img {
-  height: auto;
+height: auto;
+}
+.brand-bg-hover h4 {
+font-size: 20px;
+}
+.brand-bg-hover .btn a {
+font-size: 17px;
+}
+.web-page .web-gif {
+padding-left: 21px;
+}
+.web-page .web-heading {
+padding-right: 35px;
+padding-left: 33px;
+}
+.web-page-slide {
+margin-left: 0;
+width: 100%;
 }
 }
 

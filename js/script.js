@@ -1,5 +1,5 @@
 
-    $(".mobile_btn").click(function(){
+$(".mobile_btn").click(function(){
   $(".links_bar").toggleClass("sidebar");
 });
 
@@ -90,6 +90,7 @@ $(document).ready(function() {
       loop: true,
       margin: 0,
       autoplay: true,
+      autoplaySpeed: 1000,
       dots: false,
       items: 4,
       nav: false,
