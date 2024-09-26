@@ -461,6 +461,7 @@ font-size: 18px;
   padding: 0 10px;
   transform: unset;
 }
+
 }
 
 
@@ -513,6 +514,9 @@ font-size: 15px;
 .product-main .container {
   width: calc(100% - 13px);
   margin-left: 13px;
+}
+.product-slider .owl-nav {
+  left: 51%;
 }
 }
 
