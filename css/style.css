@@ -1726,3 +1726,6 @@ max-width: 100%;
 padding-left: 110px;
 padding-right: 142px;
 }
+.copyright ul li span {
+    padding: 0 6px 0 0;
+}
