@@ -156,11 +156,15 @@ $(document).ready(function() {
               items: 1.2,    // 1 item on mobile
           },
           600: {
-              items: 2.2,    // 2 items on tablets
+              items: 2.2, 
+              margin:10,   // 2 items on tablets
           },
           1000: {
               items: 3.2,  // Show 3.2 items on desktop
           },
+          1400: {
+            items: 4.2,  // Show 3.2 items on desktop
+        },
           1600: {
             items: 4.2,  // Show 4.2 items on large desktop
         },

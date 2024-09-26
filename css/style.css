@@ -1246,7 +1246,7 @@ left: 0;
 .product-main .shape-bar img:last-child {
     left: 47%;
     position: absolute;
-    bottom: 167px;
+    bottom: 124px;
     transform: translateX(-50%);
 }
 
@@ -1731,7 +1731,7 @@ padding-right: 142px;
 
 .product-main .owl-item.active.middle-slide img {
 transform: scale(1.2);
-padding: 23px 12px;
+padding: 23px 14px;
 height: 500px;
 }
 
