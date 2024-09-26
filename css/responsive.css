@@ -42,7 +42,7 @@ gap: 44px;
   left: 2px;
 }
 .brand-text p {
-  font-size: 22px;
+  font-size: 21px;
 }
 .email-main .swiper-button-next {
   left: 55.6%;
@@ -81,6 +81,9 @@ height: 500px!important;
 }
 .gallery-slider-main .slider.slider-for .product-slider-item img {
   height: 500px;
+}
+.brand-text p {
+  font-size: 22px;
 }
 }
 
