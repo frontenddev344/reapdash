@@ -1165,13 +1165,17 @@ transition: transform 0.4s ease, opacity 0.4s ease;
     transition: all .3s ease;
 }
 .product-slider .owl-nav button:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 36px;
-	height: 36px;
-	z-index: 3;
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 36px;
+height: 36px;
+z-index: 3;
+transition: all .3s ease;
+}
+.product-slider .owl-nav button:hover:before {
+    transform: translateY(-5px);
 }
 
 .product-slider .owl-nav button.owl-prev:before {
