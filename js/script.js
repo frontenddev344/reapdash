@@ -321,8 +321,8 @@ $('.slider-for').slick({
         this.el.classList.remove("loading");
       },
       autoplay: {
-  delay: 2500, // Time delay between slide changes (in milliseconds)
-  disableOnInteraction: false // Prevents autoplay from stopping on interaction
+     delay: 2000, // Time delay between slide changes (in milliseconds)
+    disableOnInteraction: false // Prevents autoplay from stopping on interaction
 },
       slideChange: function () {
         // Update counter display
