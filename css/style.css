@@ -965,6 +965,8 @@ line-height: 160%; /* 25.6px */
 letter-spacing: -0.48px;
 display: flex;
 align-items: center;
+z-index: 2;
+position: relative;
 }
 
 .date-dwld a img {
@@ -1015,8 +1017,9 @@ position: relative;
 .web-page-slider-text:hover:before {
     width: 100%;
     height: calc(100% + 48px);
-    width: calc(100% + 41px);
-    left: -19px;
+    width: calc(100% + 43px);
+    left: -22px;
+    box-shadow: 0px 20px 15px 5px #00000021;
 }
 
 .web-page-slider-text:before {
@@ -1043,18 +1046,18 @@ min-height: 507px;
 .web-page-slider-text:after {
     content: "";
     position: absolute;
-top: -75px;
-left: 10px;
-width: 96%;
-height: 100%;
-background: url("../img/web-layer-1.png");
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-transition: all .3s ease;
-opacity: 0;
-visibility: hidden;
-border-top-left-radius: 43px;
+    top: -75px;
+    left: -17px;
+    width: 96%;
+    height: 100%;
+    background: url("../img/web-layer-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .3s ease;
+    opacity: 0;
+    visibility: hidden;
+    border-top-left-radius: 43px;
 }
 .web-page-slider-text:hover:after{
 opacity: 1;
