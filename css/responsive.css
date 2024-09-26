@@ -10,6 +10,12 @@
 .email-main .swiper-container {
   height: 800px;
 }
+.product-main .owl-item.active.middle-slide img {
+  padding: 23px 21px;
+}
+.product-main .owl-item img {
+  padding: 0px 8px;
+}
 }
 
 
@@ -500,6 +506,13 @@ font-size: 15px;
 .view-all {
   padding: 16px 23px;
   font-size: 13px;
+}
+.product-slider {
+  margin-left: 0;
+}
+.product-main .container {
+  width: calc(100% - 13px);
+  margin-left: 13px;
 }
 }
 
