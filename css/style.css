@@ -1015,8 +1015,8 @@ position: relative;
 .web-page-slider-text:hover:before {
     width: 100%;
     height: calc(100% + 48px);
-    width: calc(100% + 28px);
-    left: -13px;
+    width: calc(100% + 41px);
+    left: -19px;
 }
 
 .web-page-slider-text:before {
