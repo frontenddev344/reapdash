@@ -687,14 +687,13 @@ font-weight: 700;
 line-height: 140%; /* 28px */
 text-transform: uppercase;
 }
-
 .brand {
     padding-left: 52px;
     margin-top: 52px;
     overflow: hidden;
     margin-bottom: 92px;
+    padding-top: 46px;
 }
-
 .gridflex {
 display: flex;
 gap: 12px;
