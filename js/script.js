@@ -137,69 +137,70 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-    var $carousel = $('.product-slide');
-    var totalItems = $carousel.find('.item').length;
-    var $progressBarFill = $('.progress-bar-fill');
+  var $carousel = $('.product-slide');
+  var totalItems = $carousel.find('.item').length;
+  var $progressBarFill = $('.progress-bar-fill');
 
-    $carousel.owlCarousel({
-        loop: true,
-        items: 6,            // Show 6 items
-        autoplay: true,
-        autoplaySpeed: 2000,
-        autoplayTimeout: 5000,
-        margin: 12,          // Space between slides
-        startPosition: 0,    // Start from the first slide
-        nav: true,
-        dots: false,
-        responsive: {
-            0: {
-                items: 1.2,    // 1 item on mobile
-            },
-            600: {
-                items: 2.2,    // 2 items on tablets
-            },
-            1000: {
-                items: 3.2,  // Show 5.2 items on desktop
-            },
-            1600: {
-              items: 4.2,  // Show 5.2 items on desktop
+  $carousel.owlCarousel({
+      loop: true,
+      items: 6,            // Show 6 items
+      autoplay: false,
+      autoplaySpeed: 2000,
+      autoplayTimeout: 5000,
+      margin: 0,          // Space between slides
+      startPosition: 0,    // Start from the first slide
+      nav: true,
+      dots: false,
+      responsive: {
+          0: {
+              items: 1.2,    // 1 item on mobile
           },
-          1800: {
-            items: 5.2,  // Show 5.2 items on desktop
-        }
+          600: {
+              items: 2.2,    // 2 items on tablets
+          },
+          1000: {
+              items: 3.2,  // Show 3.2 items on desktop
+          },
+          1600: {
+            items: 4.2,  // Show 4.2 items on large desktop
         },
-        onInitialized: function(event) {
-            updateProgressBar(event);
-            updateMiddleSlide(event);   // Call custom function to add middle slide class
-        },
-        onTranslated: function(event) {
-            updateProgressBar(event);
-            updateMiddleSlide(event);   // Call custom function to add middle slide class
-        }
-    });
+        1800: {
+          items: 5.2,  // Show 5.2 items on extra large desktop
+      }
+      },
+      onInitialized: function(event) {
+          updateProgressBar(event);
+          updateMiddleSlide(event);   // Call custom function to add middle slide class
+      },
+      onTranslated: function(event) {
+          updateProgressBar(event);
+          updateMiddleSlide(event);   // Call custom function to add middle slide class
+      }
+  });
 
-    // Update Progress Bar
-    function updateProgressBar(event) {
-        var index = event.item.index - event.relatedTarget._clones.length / 2; // Adjust for clones
-        if (index >= totalItems) {
-            index = 0;
-        }
-        var progressPercent = ((index + 1) / totalItems) * 100; // Calculate current progress
-        $progressBarFill.css('width', progressPercent + '%');
-    }
+  // Update Progress Bar
+  function updateProgressBar(event) {
+      var index = event.item.index - event.relatedTarget._clones.length / 2; // Adjust for clones
+      if (index >= totalItems) {
+          index = 0;
+      }
+      var progressPercent = ((index + 1) / totalItems) * 100; // Calculate current progress
+      $progressBarFill.css('width', progressPercent + '%');
+  }
 
-    // Add 'middle-slide' class to the middle slide
-    function updateMiddleSlide(event) {
-        var visibleItems = event.page.size;  // Number of currently visible items
-        var middleIndex = Math.floor(visibleItems / 2);  // Calculate middle item index
-        
-        // Remove the 'middle-slide' class from all slides
-        $carousel.find('.owl-item').removeClass('middle-slide');
+  // Add 'middle-slide' class to the middle slide
+  function updateMiddleSlide(event) {
+      var visibleItems = event.page.size;  // Number of currently visible items
+      var middleIndex = Math.floor(visibleItems / 2);  // Calculate middle item index
+      
+      // Remove the 'middle-slide' class from all slides
+      $carousel.find('.owl-item').removeClass('middle-slide');
 
-        // Add 'middle-slide' class to the middle visible item
-        $carousel.find('.owl-item.active').eq(middleIndex).addClass('middle-slide');
-    }
+      // Add 'middle-slide' class to the middle visible item
+      $carousel.find('.owl-item.active').eq(middleIndex).addClass('middle-slide');
+  }
 });
+
 
 
 // galery
