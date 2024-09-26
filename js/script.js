@@ -259,75 +259,75 @@ $('.slider-for').slick({
 
 
 
- // Ensure to include the Swiper library in your project
- const sliderSelector = ".swiper-container";
+  
+  var sliderSelector = ".swiper-container",
+  options = {
+    init: false,
+    loop: true,
+    speed: 800,
+    slidesPerView: 4,
+    centeredSlides: true,
+    effect: "coverflow",
+    coverflowEffect: {
+      rotate: 43,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+      scale: 0.4
+    },
+    grabCursor: true,
+    parallax: true,
+    spaceBetween: 20, // Add space between slides (in pixels)
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>'; // Create custom bullet for pagination
+      }
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+      1500: {
+        coverflowEffect: {
+          rotate: 30,
+        },
+        spaceBetween: 30 // Change space between slides for large screens
+      },
+      1180: {
+        slidesPerView: 2,
+        spaceBetween: 20 // Adjust spacing for this breakpoint
+      },
+      1023: {
+        slidesPerView: 2,
+        spaceBetween: 15 // Space between slides for smaller screens
+      },
+      575: {
+        slidesPerView: 1,
+        spaceBetween: 10 // Smaller gap for very small screens
+      }
+    },
+    on: {
+      imagesReady: function () {
+        this.el.classList.remove("loading");
+      },
+      slideChange: function () {
+        // Update counter display
+        const currentIndex = this.realIndex + 1; // realIndex is 0-based
+        const totalSlides = this.slides.length - 2; // Exclude duplicated slides in loop mode
+        document.querySelector('.swiper-counter').textContent = `${currentIndex} / ${totalSlides}`;
+      }
+    }
+  };
 
- const options = {
-   init: true,
-   loop: true,
-   speed: 800,
-   slidesPerView: 4,
-   centeredSlides: true,
-   effect: "coverflow",
-   coverflowEffect: {
-     rotate: 43,
-     stretch: 0,
-     depth: 100,
-     modifier: 1,
-     slideShadows: true,
-     scale: 0.4
-   },
-   grabCursor: true,
-   parallax: true,
-   spaceBetween: 20,
-   pagination: {
-     el: ".swiper-pagination",
-     clickable: true,
-     renderBullet: function (index, className) {
-       return '<span class="' + className + '">' + (index + 1) + '</span>';
-     }
-   },
-   navigation: {
-     nextEl: ".swiper-button-next",
-     prevEl: ".swiper-button-prev"
-   },
-  //  autoplay: {
-  //    delay: 3000, // Delay between slides in milliseconds
-  //    disableOnInteraction: false // Continue autoplay after user interactions
-  //  },
-   breakpoints: {
-     1500: {
-       coverflowEffect: { rotate: 30 },
-       spaceBetween: 30
-     },
-     1180: {
-       slidesPerView: 2,
-       spaceBetween: 20
-     },
-     1023: {
-       slidesPerView: 2,
-       spaceBetween: 15
-     },
-     575: {
-       slidesPerView: 1,
-       spaceBetween: 10
-     }
-   },
-   on: {
-     imagesReady: function () {
-       this.el.classList.remove("loading");
-     },
-     slideChange: function () {
-       const currentIndex = this.realIndex + 1;
-       const totalSlides = this.slides.length - 2; // Adjust for duplicated slides
-       document.querySelector('.swiper-counter').textContent = `${currentIndex} / ${totalSlides}`;
-     }
-   }
- };
- 
- const mySwiper = new Swiper(sliderSelector, options);
- 
- // Initialize counter on first load
- const totalSlides = mySwiper.slides.length - 2; // Adjust for duplicated slides
- document.querySelector('.swiper-counter').textContent = `1 / ${totalSlides}`;
- 
+var mySwiper = new Swiper(sliderSelector, options);
+mySwiper.init();
+
+// Initialize counter on first load
+const totalSlides = mySwiper.slides.length - 2; // Exclude duplicated slides in loop mode
+document.querySelector('.swiper-counter').textContent = `1 / ${totalSlides}`;
+
+  
