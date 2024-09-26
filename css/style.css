@@ -1701,3 +1701,16 @@ margin-left: -20px;
 .web-page .web-heading {
 padding-right: 35px;
 }
+
+.product-main .container {
+max-width: 100%;
+padding: 0;
+margin-left: 102px;
+width: calc(100% - 102px);
+padding-right: 137px;
+}
+.email-main .container {
+max-width: 100%;
+padding-left: 110px;
+padding-right: 142px;
+}

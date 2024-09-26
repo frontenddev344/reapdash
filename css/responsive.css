@@ -258,8 +258,12 @@ margin-left: -27px;
   transform: translateX(88%);
 }
 .cross-bar{
-  display: block;
-  }
+display: block;
+}
+.product-main .container {
+margin-left: 37px;
+width: calc(100% - 37px);
+}
 }
 
 
@@ -454,6 +458,10 @@ font-size: 18px;
 .brand-bg-hover .btn a {
 padding: 24px 34px;
 font-size: 15px;
+}
+.view-all {
+  padding: 16px 23px;
+  font-size: 13px;
 }
 }
 
