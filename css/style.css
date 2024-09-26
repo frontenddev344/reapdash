@@ -711,6 +711,7 @@ width: 65%;
 .brand-slider-text > img {
     height: 508px!important;
     max-width: 100%;
+    border-radius: 44px;
 }
 
 .brand-slider-text {
@@ -1277,7 +1278,7 @@ box-shadow: #00000026 0px 50px 100px -20px, rgb(1 0 0) -1px 32px 64px -31px;
 .gallery-slider-main .product-slider-item img {
 width: 100%;
 object-fit: cover;
-border-radius: 10px;
+border-radius: 35px
 }
 
 .gallery-slider-main  .product-slider-item {
