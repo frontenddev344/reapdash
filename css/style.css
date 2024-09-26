@@ -410,12 +410,12 @@ position: relative;
 }
 
 .short-right {
-background: #fff;
-padding: 20px;
-position: absolute;
-bottom: 0;
-border-top-left-radius: 44px;
-width: 100%;
+    background: #fff;
+    padding: 20px 0px 0 20px;
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 44px;
+    width: 100%;
 }
 
 .short-right img {
