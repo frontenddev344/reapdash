@@ -16,6 +16,12 @@
 .product-main .owl-item img {
   padding: 0px 8px;
 }
+.media-hub-text {
+  margin-left: 178px;
+}
+.header .logo img {
+  max-width: 170px;
+}
 }
 
 
@@ -284,6 +290,14 @@ display: block;
 margin-left: 37px;
 width: calc(100% - 37px);
 }
+
+
+.primary-btn {
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 }
 
 
