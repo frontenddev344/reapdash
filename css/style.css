@@ -1288,6 +1288,17 @@ border-radius: 35px
 margin-top: 32px;
 position: relative;
 }
+
+.gallery-slider-main .product-slider-item figure {
+    outline: 1px solid #ffffff38;
+    outline-offset: 0px;
+    border-radius: 12px;
+}
+
+.gallery-slider-main .product-slider-item:hover figure {
+    opacity: 1;
+    outline-color: #ffffff38;
+}
 .gallery-slider-main .slider.slider-for .product-slider-item img {
 height: 731px;
 border-radius: 40px;
