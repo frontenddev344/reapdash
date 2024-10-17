@@ -156,7 +156,7 @@ $(document).ready(function() {
               items: 1.2,    // 1 item on mobile
           },
           600: {
-              items: 2.2, 
+              items: 2, 
               margin:10,   // 2 items on tablets
           },
           1000: {

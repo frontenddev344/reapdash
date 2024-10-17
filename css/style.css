@@ -887,12 +887,12 @@ padding: 69px 10px 140px;
 position: relative;
 }
 .web-gif img {
-width: 142px;
+width: 110px;
 }
 
 .web-heading h3 {
 color: #FFF;
-font-size: 48px;
+font-size: 40px;
 font-style: normal;
 font-weight: 700;
 line-height: 100%; /* 48px */
@@ -910,18 +910,18 @@ margin-top: -25px;
 
 
 .view-all {
-padding: 24px 32px;
-border-radius: 250px;
-border: 2px solid #FFF;
-color: #FFF;
-text-align: center;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 140%; /* 22.4px */
-letter-spacing: 0.48px;
-text-transform: uppercase;
-overflow: hidden;
+    padding: 10px 30px;
+    border-radius: 250px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    overflow: hidden;
 }
 .web-page .container {
 max-width: 1520px;
