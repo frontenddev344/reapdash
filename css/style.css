@@ -638,12 +638,13 @@ gap: 12px;
 }
 
 .brand-text p {
-max-width: 551px;
+    max-width: 551px;
+    font-size: 22px;
 }
 
 .brand-text h3 {
 color: var(--white);
-font-size: 32px;
+font-size: 28px;
 font-style: normal;
 font-weight: 600;
 line-height: 100%;
@@ -652,7 +653,7 @@ margin: 32px 0 20px;
 }
 
 .view-flex {
-margin-top: 96px;
+margin-top: 66px;
 display: flex;
 justify-content: space-between;
 max-width: 553px;
@@ -673,7 +674,7 @@ background: var(--white);
 
 .view-flex span {
 color: var(--white);
-font-size: 24px;
+font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: 160%;
@@ -682,7 +683,7 @@ opacity: 0.5;
 
 .view-flex a {
 color: var(--white);
-font-size: 20px;
+font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: 140%; /* 28px */
@@ -710,7 +711,7 @@ width: 65%;
 }
 
 .brand-slider-text > img {
-    height: 508px!important;
+    height: 475px!important;
     max-width: 100%;
     border-radius: 44px;
 }
@@ -719,6 +720,7 @@ width: 65%;
     position: relative;
     overflow: hidden;
     border-radius: 47px;
+    margin: 0 auto;
 }
 
 .brand-bg-hover {
@@ -802,8 +804,8 @@ position: relative;
 z-index: 2;
 }
 .brand-identity > img {
-width: 634px;
-height: 508px;
+    width: 634px;
+    height: 475px;
 }
 
 .brand-slider {
