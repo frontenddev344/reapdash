@@ -27,7 +27,7 @@
 
 @media (max-width: 1700px) {
 .header_flex .links_bar {
-gap: 44px;
+gap: 60px;
 }
 
 .media-hub-text h1 {
@@ -68,7 +68,7 @@ height: 500px!important;
 
 @media (max-width: 1600px) {
   .header_flex .links_bar {
-    gap: 20px;
+    gap: 24px;
 }
 .product-slider {
   margin-left: 0;
