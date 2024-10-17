@@ -61,7 +61,7 @@ $('.brand-slider').owlCarousel({
     items: 2.5, // Show 2.5 slides at a time
     responsiveClass: true,
     autoplaySpeed: 2000,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 8000,
     dots: false,
     nav: true,
     responsive: {
