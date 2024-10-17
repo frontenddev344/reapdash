@@ -163,7 +163,7 @@ $(document).ready(function() {
               items: 3.2,  // Show 3.2 items on desktop
           },
           1400: {
-            items: 4.2,  // Show 3.2 items on desktop
+            items: 3.2,  // Show 3.2 items on desktop
         },
           1600: {
             items: 4.2,  // Show 4.2 items on large desktop
