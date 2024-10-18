@@ -260,7 +260,7 @@ max-width: 100%;
 }
 
 .banner-slider .grid {
-grid-template-columns: 3fr 2.3fr 1fr;
+grid-template-columns: 3fr 2.2fr 1fr;
 gap: 40px;
 padding-top: 50px;
 position: relative;
