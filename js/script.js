@@ -72,8 +72,11 @@ $('.brand-slider').owlCarousel({
             items: 1.5,
         },
         1000: {
-            items: 1.5
+            items: 2
         },
+        1400: {
+          items: 2.3
+      },
         1600: {
           items: 2.5
       }

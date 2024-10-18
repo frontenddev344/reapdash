@@ -629,6 +629,7 @@ gap: 15px;
 .brand-identity {
     position: relative;
     padding-top: 20px;
+    height: 100%;
 }
 .brand-text {
 position: absolute;
@@ -713,6 +714,7 @@ text-transform: uppercase;
 display: flex;
 gap: 12px;
 position: relative;
+padding-bottom: 101px;
 }
 
 .gridflex .item:first-child {
@@ -724,7 +726,7 @@ width: 65%;
 }
 
 .brand-slider-text > img {
-    height: 475px!important;
+    /* height: 475px!important; */
     max-width: 100%;
     border-radius: 44px;
 }
@@ -818,7 +820,8 @@ z-index: 2;
 }
 .brand-identity > img {
     width: 634px;
-    height: 475px;
+    /* height: 555px; */
+    height: 100%;
 }
 
 .brand-slider {
@@ -870,7 +873,7 @@ opacity: 0;
 }
 .brand-slider .owl-stage-outer {
 padding-top: 20px;
-padding-bottom: 101px;
+/* padding-bottom: 101px; */
 }
 .brand-slider-text{
 transition: all .3s ease;

@@ -60,10 +60,10 @@ gap: 60px;
   height: 63px;
 }
 .brand-identity > img {
-height: 500px;
+/* height: 500px; */
 }
 .brand-slider-text > img {
-height: 500px!important;
+/* height: 500px!important; */
 }
 
 }
@@ -98,7 +98,7 @@ height: 500px!important;
   height: 500px;
 }
 .brand-text p {
-  font-size: 22px;
+  font-size: 18px;
 }
 .product-main .owl-item.active.middle-slide img {
   padding: 23px 14px;
@@ -330,7 +330,7 @@ padding: 0 21px;
   height: 451px;
 }
 .brand-slider-text > img {
-  height: 448px!important;
+  /* height: 448px!important; */
 }
 .brand-text p {
   font-size: 14px;
