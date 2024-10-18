@@ -633,13 +633,14 @@ gap: 15px;
     padding-top: 20px;
     height: 100%;
     width: 100%;
+    padding: 20px;
 }
 .brand-text {
-position: absolute;
-top: 0;
-left: 36px;
-width: calc(100% - 36px);
-padding-right: 20px;
+    width: 100%;
+    padding-right:0;
+    position: relative;
+    z-index: 1;
+    height: 100%;
 }
 
 .brand-text > img {
@@ -670,12 +671,15 @@ margin: 32px 0 20px;
 }
 
 .view-flex {
-margin-top: 66px;
-display: flex;
-justify-content: space-between;
-max-width: 553px;
-position: relative;
-align-items: center;
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 553px;
+    position: absolute;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 10px;
 }
 
 .view-flex:before {
@@ -822,9 +826,10 @@ position: relative;
 z-index: 2;
 }
 .brand-identity > img {
-    /* height: 555px; */
-    height: 100%;
+    position: absolute;
+    inset: 0;
     width: 100%;
+    height: 100%;
 }
 
 .brand-slider {
