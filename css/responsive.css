@@ -467,6 +467,12 @@ font-size: 18px;
 .product-main .owl-item.active.middle-slide img {
   padding: 23px 7px;
 }
+.gridflex .item:last-child {
+  width: 100%;
+}
+.gridflex .item:last-child {
+  width: 100%;
+}
 }
 @media (max-width: 600px) {
   .product-main .owl-item img {
