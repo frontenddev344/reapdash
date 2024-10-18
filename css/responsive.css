@@ -412,7 +412,7 @@ font-size: 18px;
   flex-direction: column;
 }
 .brand-slider .owl-nav {
-  top: calc(-100vh + 100px);
+  top: -370px;
   left: unset;
   right: 112px;
 }
@@ -569,7 +569,7 @@ font-size: 15px;
   left: 51%;
 }
 .brand-slider .owl-nav {
-  top: calc(-100vh + 90px);
+  top: -400px;
 }
 }
 
@@ -580,7 +580,7 @@ font-size: 15px;
 }
 .brand-slider .owl-nav {
   right: 75px;
-  top: calc(-100vh + 65px);
+  top: -410px;
 }
 .links_bar {
 width: 80%;
