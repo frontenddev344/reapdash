@@ -406,7 +406,7 @@ font-size: 18px;
   flex-direction: column;
 }
 .brand-slider .owl-nav {
-  top: -449px;
+  top: calc(-100vh + 40px);
   left: unset;
   right: 112px;
 }
