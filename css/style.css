@@ -633,14 +633,17 @@ gap: 15px;
     padding-top: 20px;
     height: 100%;
     width: 100%;
-    padding: 20px;
+    padding: 36px;
 }
 .brand-text {
     width: 100%;
-    padding-right:0;
+    padding-right: 0;
     position: relative;
     z-index: 1;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .brand-text > img {
@@ -675,11 +678,8 @@ margin: 32px 0 20px;
     display: flex;
     justify-content: space-between;
     max-width: 553px;
-    position: absolute;
+    position: relative;
     align-items: center;
-    left: 0;
-    right: 0;
-    bottom: 10px;
 }
 
 .view-flex:before {
@@ -838,7 +838,7 @@ position: relative;
 
 .brand-slider .owl-nav {
 position: absolute;
-top: 18px;
+top: 10px;
 left: -106px;
 }
 
