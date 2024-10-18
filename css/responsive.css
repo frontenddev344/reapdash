@@ -342,7 +342,7 @@ padding: 0 21px;
   /* height: 448px!important; */
 }
 .brand-text p {
-  font-size: 14px;
+  font-size: 16px;
 }
 .brand {
   padding-left: 15px;
@@ -406,7 +406,7 @@ font-size: 18px;
   flex-direction: column;
 }
 .brand-slider .owl-nav {
-  top: calc(-100vh + 40px);
+  top: calc(-100vh + 30px);
   left: unset;
   right: 112px;
 }
@@ -571,6 +571,7 @@ font-size: 15px;
 }
 .brand-slider .owl-nav {
   right: 75px;
+  top: calc(-100vh + -10px);
 }
 .links_bar {
 width: 80%;
