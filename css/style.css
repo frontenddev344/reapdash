@@ -398,13 +398,18 @@ height: 100%;
 position: absolute;
 bottom: 0;
 object-fit: cover;
+opacity: 0;
 }
 
 .banner-links-top {
 position: relative;
 }
 .banner-ipad {
-position: relative;
+    position: relative;
+    background-image: url("../img/iPad-Air-new.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
 }
 .banner-links-top {
 position: relative;
