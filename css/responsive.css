@@ -370,6 +370,12 @@ padding: 0 21px;
 
 
 @media (max-width: 767px) {
+  .banner-links {
+    height: auto;
+}
+.banner .banner-radius-img {
+  height: auto;
+}
 .banner-video-flex {
 display: none;
 }
@@ -406,7 +412,7 @@ font-size: 18px;
   flex-direction: column;
 }
 .brand-slider .owl-nav {
-  top: calc(-100vh + 30px);
+  top: calc(-100vh + 100px);
   left: unset;
   right: 112px;
 }
@@ -562,6 +568,9 @@ font-size: 15px;
 .product-slider .owl-nav {
   left: 51%;
 }
+.brand-slider .owl-nav {
+  top: calc(-100vh + 90px);
+}
 }
 
 
@@ -571,7 +580,7 @@ font-size: 15px;
 }
 .brand-slider .owl-nav {
   right: 75px;
-  top: calc(-100vh + -10px);
+  top: calc(-100vh + 65px);
 }
 .links_bar {
 width: 80%;
