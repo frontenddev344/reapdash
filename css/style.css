@@ -736,6 +736,7 @@ width: 65%;
     /* height: 475px!important; */
     max-width: 100%;
     border-radius: 44px;
+    height: 100%;
 }
 
 .brand-slider-text {
@@ -743,6 +744,7 @@ width: 65%;
     overflow: hidden;
     border-radius: 47px;
     margin: 0 auto;
+    height: 100%;
 }
 
 .brand-bg-hover {
@@ -903,6 +905,23 @@ height: 1px;
 max-width: 96%;
 }
 
+.brand-slider.owl-carousel.owl-loaded.owl-drag {
+    height: 100%;
+}
+
+.brand-slider.owl-carousel.owl-loaded.owl-drag .owl-stage-outer {
+    height: 100%;
+    overflow: visible;
+    overflow-x: clip;
+}
+
+.brand-slider.owl-carousel.owl-loaded.owl-drag .owl-stage {
+    height: 100%;
+}
+
+.brand-slider.owl-carousel.owl-loaded.owl-drag .owl-stage .owl-item {
+    height: 100%;
+}
 /* web-page */
 
 .web-page {
