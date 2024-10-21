@@ -87,58 +87,6 @@ $('.brand-slider').owlCarousel({
 
 
 //  web-page-slider
-
-$(document).ready(function() {
-  $('.web-page-slider').owlCarousel({
-      loop: true,
-      margin: 0,
-      autoplay: true,
-      autoplaySpeed: 1000,
-      dots: false,
-      items: 4,
-      nav: false,
-      responsive: {
-          0: {
-              items: 1,
-          },
-          600: {
-              items: 2,
-          },
-          1000: {
-              items: 3,
-          },
-          1200: {
-              items: 4,
-          }
-      }
-  }).on('initialized.owl.carousel changed.owl.carousel', function(event) {
-      // Use setTimeout to ensure DOM is ready
-      setTimeout(function() {
-          // Get all active items
-          var activeItems = $('.web-page-slider .owl-item.active');
-
-          // Debugging: Check active items
-          console.log("Active Items Count: ", activeItems.length);
-
-          // Reset padding for all active items
-          activeItems.css({
-              'padding-left': '0',
-              'padding-right': '0'
-          });
-
-          // Add padding to the first and last active items
-          if (activeItems.length > 0) {
-              activeItems.first().css('padding-left', '20px');  // Add left padding for the first active item
-              activeItems.last().css('padding-right', '20px');  // Add right padding for the last active item
-          }
-      }, 50); // Delay to ensure DOM updates
-  });
-});
-
-
-
-
-
 $(document).ready(function() {
   var $carousel = $('.product-slide');
   var totalItems = $carousel.find('.item').length;
@@ -150,7 +98,6 @@ $(document).ready(function() {
       autoplay: false,
       autoplaySpeed: 2000,
       autoplayTimeout: 5000,
-      margin: 0,          // Space between slides
       startPosition: 0,    // Start from the first slide
       nav: true,
       dots: false,
@@ -160,7 +107,7 @@ $(document).ready(function() {
           },
           600: {
               items: 2, 
-              margin:10,   // 2 items on tablets
+              margin: 10,   // 2 items on tablets
           },
           1000: {
               items: 3.2,  // Show 3.2 items on desktop
@@ -195,7 +142,7 @@ $(document).ready(function() {
       $progressBarFill.css('width', progressPercent + '%');
   }
 
-  // Add 'middle-slide' class to the middle slide
+  // Add 'middle-slide' class to the middle slide and make it bigger
   function updateMiddleSlide(event) {
       var visibleItems = event.page.size;  // Number of currently visible items
       var middleIndex = Math.floor(visibleItems / 2);  // Calculate middle item index
@@ -207,6 +154,9 @@ $(document).ready(function() {
       $carousel.find('.owl-item.active').eq(middleIndex).addClass('middle-slide');
   }
 });
+
+
+
 
 
 
