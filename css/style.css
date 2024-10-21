@@ -855,8 +855,8 @@ content: "";
 position: absolute;
 top: 0;
 left: 0;
-width: 74px;
-height: 74px;
+width: 72px;
+height: 72px;
 transition: all .3s ease;
 }
 .brand-slider .owl-nav button:hover:before {
@@ -1337,7 +1337,7 @@ position: relative;
 }
 
 .gallery-slider-main .product-slider-item figure {
-    outline: 1px solid #ffffff38;
+    /* outline: 1px solid #ffffff38; */
     outline-offset: 0px;
     border-radius: 12px;
 }

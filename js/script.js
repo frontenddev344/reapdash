@@ -29,7 +29,7 @@ $(document).ready(function() {
     responsiveClass: true,
     autoplay: true,
     autoplayTimeout: 2000, // Time between slides
-    autoplaySpeed: 16000, // Smooth autoplay speed
+    autoplaySpeed: 8000, // Smooth autoplay speed
     nav: false,
     responsive: {
         0: {
