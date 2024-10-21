@@ -170,6 +170,9 @@ width: auto;
 .product-main .owl-item img {
   padding: 0px 11px;
 }
+.short-right img {
+  object-fit: cover;
+}
 }
 
 
@@ -423,9 +426,7 @@ font-size: 18px;
 .brand-identity > img {
   width: 100%;
 }
-.web-page-slider-text > img {
-  height: 298px;
-}
+
 .web-page-slider-text p {
   font-size: 20px;
 }
