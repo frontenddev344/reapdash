@@ -428,8 +428,9 @@ position: relative;
 }
 
 .short-right img {
-border-radius: 44px;
-width: 100%;
+    border-radius: 44px;
+    width: auto;
+    height: 100%;
 }
 .banner-video img {
 width: 100%;
