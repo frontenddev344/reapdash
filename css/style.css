@@ -1838,6 +1838,11 @@ transition: all 0.3s ease; /* Optional: smooth transition for padding */
 
 
 /* landing page start  */
+
+.landing-page .header .container {
+    padding-right: 0;
+}
+
 .landing-page .media-hub-text {
     margin-top: 0;
 }
@@ -1983,7 +1988,24 @@ body.landing-page section.banner {
 }
 
 .landing-page-cards {
+    position: relative;
+}
+
+.landing-page-cards-warp {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 136px;
+}
+
+.dot-shape {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+}
+
+.lane-shape {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
