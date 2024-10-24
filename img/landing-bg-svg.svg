@@ -1,0 +1,16 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1684 289" width="1684" height="289">
+	<title>landing-bg-svg</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m-96 257v-506c0-28.72 23.28-52 52-52h123.46c17.77 0 34.32-9.08 43.86-24.08l46.36-72.84c9.54-15 26.09-24.08 43.87-24.08h1538.45c17.67 0 32 14.33 32 32v647c0 17.67-14.33 32-32 32h-101c-28.72 0-52-23.28-52-52v-167c0-28.72-23.28-52-52-52h-1406c-28.72 0-52 23.28-52 52v167c0 28.72-23.28 52-52 52h-101c-17.67 0-32-14.33-32-32z"/>
+		</clipPath>
+	</defs>
+	<style>
+		.s0 { fill: #4183f2 } 
+	</style>
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<g>
+			<path class="s0" d="m1804 299h-1920v-741h1920z"/>
+		</g>
+	</g>
+</svg>

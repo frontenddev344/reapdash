@@ -171,6 +171,10 @@ width: auto;
 .short-right img {
   object-fit: cover;
 }
+.landing-page .media-hub-text h1 {
+  width: 100%;
+  white-space:normal;
+}
 }
 
 
@@ -572,6 +576,10 @@ font-size: 15px;
 }
 .email-main .image-container {
   padding: 0 15px;
+}
+.landing-wrap .grid {
+  grid-gap: 24px;
+  grid-template-columns:100%;
 }
 }
 
