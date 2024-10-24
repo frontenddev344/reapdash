@@ -1891,6 +1891,7 @@ transition: all 0.3s ease; /* Optional: smooth transition for padding */
     bottom: 0;
     margin: auto;
     z-index: 4;
+    width: 86%;
 }
 
 .banner {
@@ -1932,4 +1933,10 @@ transition: all 0.3s ease; /* Optional: smooth transition for padding */
 .landing-page .banner-slide-bar {
     position: absolute;
     top: 160px;
+}
+
+.landing-page-cards {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 136px;
 }
