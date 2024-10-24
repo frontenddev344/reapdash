@@ -1874,6 +1874,30 @@ transition: all 0.3s ease; /* Optional: smooth transition for padding */
 .landing-card {
     border-radius: 46px;
 }
+.banner .container {
+    padding: 0;
+}
+body.landing-page section.banner {
+    overflow: hidden;
+}
+.shp1 {
+    max-width: 92px;
+    height: 110px;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    background: #fff;
+    width: calc(100% - 15px);
+    border-radius: 0 0 57px 0;
+}
+.shp-wrap1 {
+    max-width: 100px;
+    height: 109px;
+    bottom: 0;
+    right: 100%;
+    background: #4183f2;
+    border-radius: 0 0 50px 50px;
+}
 .landing-card img{
     border-radius: inherit;
     width: 100%;
@@ -1883,9 +1907,26 @@ transition: all 0.3s ease; /* Optional: smooth transition for padding */
     width: 100%;
     height: 286px;
 }
-
+.shp-wrap {
+    max-width: 100px;
+    height: 109px;
+    bottom: 0;
+    right: 100%;
+    background: #4183f2;
+    border-radius: 0 0 50px 50px;
+}
+.shp {
+    max-width: 92px;
+    height: 110px;
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    background: #fff;
+    width: calc(100% - 15px);
+    border-radius: 0 0 3px 60px;
+}
 .landing-bg-shape {
-    max-width: 1701px;
+    max-width: 1620px;
     position: absolute;
     left: 0;
     right: 0;
@@ -1894,6 +1935,10 @@ transition: all 0.3s ease; /* Optional: smooth transition for padding */
     z-index: 4;
     width: 86%;
     border-bottom: 1px solid #fff;
+    padding: 50px;
+    height: 299px;
+    background: #fff;
+    border-radius: 50px 50px 0  0;
 }
 
 .banner {
