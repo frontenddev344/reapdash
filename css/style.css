@@ -1839,7 +1839,12 @@ transition: all 0.3s ease; /* Optional: smooth transition for padding */
 
 /* landing page start  */
 
-
+.landing-page .banner-slider {
+    border-bottom-right-radius: 30px;
+}
+.landing-page .links_bar {
+    padding-bottom: 48px;
+}
 
 .landing-page .media-hub-text {
     margin-top: 0;
@@ -1851,7 +1856,7 @@ transition: all 0.3s ease; /* Optional: smooth transition for padding */
 .landing-wrap {
     width: min(1480px, 100%);
     margin: 0 auto;
-    margin-top: -240px;
+    margin-top: -270px;
     position: relative;
     z-index: 4;
     background: #ffff;
@@ -1927,7 +1932,7 @@ body.landing-page section.banner {
     border-radius: 0 0 3px 60px;
 }
 .landing-bg-shape {
-    max-width: 1620px;
+    max-width: 80%;
     position: absolute;
     left: 0;
     right: 0;
