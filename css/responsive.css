@@ -535,6 +535,9 @@ font-size: 18px;
 .landing-page-cards-warp {
   width: 98%;
 }
+.landing-page-cards-warp {
+  padding-bottom: 116px;
+}
 }
 @media (max-width: 600px) {
   .product-main .owl-item img {
@@ -621,6 +624,9 @@ font-size: 15px;
 .banner .breadcrumb li {
   font-size: 14px;
 }
+.landing-page-cards-warp {
+  padding-bottom: 66px;
+}
 }
 
 
@@ -668,5 +674,8 @@ font-size: 16px;
 }
 .media-hub-text h1 {
   font-size: 50px;
+}
+.dot-shape, .lane-shape {
+  max-width: 160px;
 }
 }
