@@ -234,6 +234,9 @@ align-items: start;
   padding-bottom: 49px;
   padding-right: 30px;
 }
+.landing-page .header .mobile_bar{
+  padding-bottom: 48px;
+}
 .header .mobile_bar i {
   color: #fff;
   font-size: 28px;
@@ -324,6 +327,12 @@ width: calc(100% - 37px);
 .brand-identity {
   padding: 20px;
 }
+.landing-bg-shape {
+  max-width: 76%;
+}
+.landing-page-cards-warp {
+  width: 75%;
+}
 }
 
 
@@ -371,6 +380,12 @@ padding: 0 21px;
 .product-slider .owl-stage-outer {
   padding-top: 40px;
   padding-bottom: 32px;
+}
+.landing-bg-shape {
+  max-width: 70%;
+}
+.landing-page-cards-warp {
+  width: 68%;
 }
 }
 
@@ -509,6 +524,16 @@ font-size: 18px;
 }
 .landing-bg-shape {
   height: 270px;
+  display: none;
+}
+.landing-wrap {
+  margin-top: 40px;
+}
+.landing-page .banner-slider {
+  min-height: 400px;
+}
+.landing-page-cards-warp {
+  width: 98%;
 }
 }
 @media (max-width: 600px) {
@@ -614,7 +639,7 @@ width: 80%;
   max-width: 320px;
 }
 .landing-page .banner-slider {
-  min-height:600px;
+  min-height:340px;
 }
 }
 
@@ -633,6 +658,9 @@ width: 149px;
 padding-top: 32px;
 padding-bottom: 21px;
 padding-right: 28px;
+}
+.landing-page .header .mobile_bar {
+  padding-bottom: 20px;
 }
 .primary-btn {
 padding: 17px 27px;

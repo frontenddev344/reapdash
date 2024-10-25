@@ -1932,7 +1932,7 @@ body.landing-page section.banner {
     border-radius: 0 0 3px 60px;
 }
 .landing-bg-shape {
-    max-width: 80%;
+    max-width: min(80%, 1530px);
     position: absolute;
     left: 0;
     right: 0;
