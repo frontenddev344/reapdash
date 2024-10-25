@@ -1839,9 +1839,7 @@ transition: all 0.3s ease; /* Optional: smooth transition for padding */
 
 /* landing page start  */
 
-.landing-page .header .container {
-    padding-right: 0;
-}
+
 
 .landing-page .media-hub-text {
     margin-top: 0;
@@ -1879,9 +1877,7 @@ transition: all 0.3s ease; /* Optional: smooth transition for padding */
 .landing-card {
     border-radius: 46px;
 }
-.banner .container {
-    padding: 0;
-}
+
 body.landing-page section.banner {
     overflow: hidden;
 }
