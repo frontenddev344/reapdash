@@ -21,28 +21,27 @@ $(document).ready(function() {
 
 
 
+$(document).ready(function() {
+  if ($('.banner-slide').length) { // Check if .banner-slide exists
     $('.banner-slide').owlCarousel({
-    loop: true,
-    margin: 10,
-    slideTransition: 'linear', // Smooth linear transition
-    items: 1,
-    responsiveClass: true,
-    autoplay: true,
-    autoplayTimeout: 2000, // Time between slides
-    autoplaySpeed: 8000, // Smooth autoplay speed
-    nav: false,
-    responsive: {
-        0: {
-            items: 1,
-        },
-        600: {
-            items: 1,
-        },
-        1000: {
-            items: 1,
-        }
-    }
+      loop: true,
+      margin: 10,
+      slideTransition: 'linear', // Smooth linear transition
+      items: 1,
+      responsiveClass: true,
+      autoplay: true,
+      autoplayTimeout: 2000, // Time between slides
+      autoplaySpeed: 8000, // Smooth autoplay speed
+      nav: false,
+      responsive: {
+        0: { items: 1 },
+        600: { items: 1 },
+        1000: { items: 1 }
+      }
+    });
+  }
 });
+
 
 $('.banner-slide').on('changed.owl.carousel', function(event) {
     // Pause autoplay for 20 seconds (20,000 ms) after each slide
@@ -267,81 +266,72 @@ $('.slider-for').slick({
 
 
 
-  
-  var sliderSelector = ".swiper-container",
-  options = {
-    init: false,
-    loop: true,
-    slidesPerView: 4,
-    speed: 800,
-    centeredSlides: true,
-    effect: "coverflow",
-    coverflowEffect: {
-      rotate: 43,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-      scale: 0.4
-    },
-    grabCursor: true,
-    parallax: true,
-    spaceBetween: 20,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-      }
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    breakpoints: {
-      1500: {
-        slidesPerView: 3, // Reduce to fit better with centeredSlides
-        coverflowEffect: {
-          rotate: 30,
+  const sliderSelector = ".swiper-container";
+
+  if (document.querySelector(sliderSelector)) {
+    const options = {
+      init: false,
+      loop: true,
+      slidesPerView: 4,
+      speed: 800,
+      centeredSlides: true,
+      effect: "coverflow",
+      coverflowEffect: {
+        rotate: 43,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+        scale: 0.4
+      },
+      grabCursor: true,
+      parallax: true,
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        }
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      breakpoints: {
+        1500: { slidesPerView: 3, spaceBetween: 30 },
+        1180: { slidesPerView: 2, spaceBetween: 20 },
+        1023: { slidesPerView: 2, spaceBetween: 15 },
+        575: { slidesPerView: 1, spaceBetween: 10 }
+      },
+      on: {
+        imagesReady: function () {
+          this.el.classList.remove("loading");
         },
-        spaceBetween: 30
-      },
-      1180: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      1023: {
-        slidesPerView: 2,
-        spaceBetween: 15
-      },
-      575: {
-        slidesPerView: 1,
-        spaceBetween: 10
+        init: function () {
+          // Set initial slide count display when Swiper initializes
+          const totalSlides = this.slides.length - 2; // Adjust for loop duplicates
+          document.querySelector('.swiper-counter').textContent = `1 / ${totalSlides}`;
+        },
+        slideChange: function () {
+          // Update slide count display on each slide change
+          const currentIndex = this.realIndex + 1;
+          const totalSlides = this.slides.length - 2;
+          document.querySelector('.swiper-counter').textContent = `${currentIndex} / ${totalSlides}`;
+        }
       }
-    },
-    on: {
-      imagesReady: function () {
-        this.el.classList.remove("loading");
-      },
-      autoplay: {
-     delay: 2000, // Time delay between slide changes (in milliseconds)
-    disableOnInteraction: false // Prevents autoplay from stopping on interaction
-},
-      slideChange: function () {
-        // Update counter display
-        const currentIndex = this.realIndex + 1;
-        const totalSlides = this.slides.length - 2;
-        document.querySelector('.swiper-counter').textContent = `${currentIndex} / ${totalSlides}`;
-      }
-    }
-  };
-
-var mySwiper = new Swiper(sliderSelector, options);
-mySwiper.init();
-
-// Initialize counter on first load
-const totalSlides = mySwiper.slides.length - 2; 
-document.querySelector('.swiper-counter').textContent = `1 / ${totalSlides}`;
-
-
+    };
   
+    const mySwiper = new Swiper(sliderSelector, options);
+    mySwiper.init();
+  }
+  
+
+
+$(document).ready(function() {
+  $(".mobile_menu-toggle").on("click", function() {
+    $(this).parent().parent(".fixed-mobile-menu").toggleClass("active-menu");
+  });
+});
+
+
