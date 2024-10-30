@@ -247,6 +247,8 @@
     padding-top: 46px;
     padding-bottom: 49px;
     padding-right: 30px;
+    opacity: 0;
+    visibility: hidden;
   }
   .landing-page .header .mobile_bar{
     padding-bottom: 48px;
